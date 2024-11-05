@@ -1,0 +1,140 @@
+<html>
+
+<head>
+    <title>
+        Lacak Pesanan
+    </title>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #6A1B1A;
+            color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header i {
+            font-size: 24px;
+        }
+
+        .header h1 {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .map-container {
+            position: relative;
+        }
+
+        .map {
+            width: 100%;
+            height: 80vh;
+        }
+
+        .order-status {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            padding: 10px;
+        }
+
+        .order-status .header {
+            background-color: #6A1B1A;
+            color: white;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .order-status .content {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .order-status .content img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .order-status .content .details {
+            flex-grow: 1;
+        }
+
+        .order-status .content .details h2 {
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .order-status .content .details p {
+            margin: 0;
+            color: gray;
+        }
+
+        .order-status .content .track-btn {
+            background-color: white;
+            border: 1px solid #6A1B1A;
+            border-radius: 20px;
+            padding: 5px 15px;
+            color: #6A1B1A;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <i class="fas fa-arrow-left">
+        </i>
+        <h1>
+            Lacak Pesanan
+        </h1>
+        <i class="fas fa-comment">
+        </i>
+    </div>
+    <div class="map-container">
+        <img alt="Map showing delivery route" class="map" height="667"
+            src="https://storage.googleapis.com/a1aa/image/ZPkX5fiujj04CaJ22grCCd1ReFe0wJBQPxryon9OLOb3KUbnA.jpg"
+            width="375" />
+        <div class="order-status">
+            <div class="header">
+                Lacak Pesanan Anda
+            </div>
+            <div class="content">
+                <img alt="Scooter icon" height="50"
+                    src="https://storage.googleapis.com/a1aa/image/8TeOqkWrX70rHCWtsiyjXPOqDjKbAU0sOu0Xqd234nfdFqtTA.jpg"
+                    width="50" />
+                <div class="details">
+                    <h2>
+                        Delivery
+                    </h2>
+                    <p>
+                        25 - 30min
+                    </p>
+                </div>
+                <button class="track-btn">
+                    Lacak
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

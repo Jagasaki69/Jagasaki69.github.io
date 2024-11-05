@@ -1,0 +1,182 @@
+<html>
+
+<head>
+    <title>
+        Notifikasi
+    </title>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #7b1e1e;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+        }
+
+        .header .back-button {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            font-size: 24px;
+            color: white;
+        }
+
+        .header .cart-button {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            font-size: 24px;
+            color: white;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background-color: #f0f0f0;
+            padding: 10px 0;
+        }
+
+        .tabs .tab {
+            margin: 0 20px;
+            font-size: 18px;
+            color: #7b1e1e;
+        }
+
+        .tabs .tab.active {
+            border-bottom: 2px solid #7b1e1e;
+        }
+
+        .notification-item {
+            background-color: #a0b0c0;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .notification-item img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .notification-item .details {
+            flex-grow: 1;
+        }
+
+        .notification-item .details .name {
+            font-weight: bold;
+        }
+
+        .notification-item .details .time {
+            color: #666;
+        }
+
+        .footer {
+            background-color: #ffd700;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-around;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer .footer-item {
+            text-align: center;
+            color: black;
+        }
+
+        .footer .footer-item i {
+            display: block;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <i class="fas fa-arrow-left back-button">
+        </i>
+        <span>
+            Notifikasi
+        </span>
+        <i class="fas fa-shopping-cart cart-button">
+        </i>
+    </div>
+    <div class="tabs">
+        <div class="tab">
+            Notifikasi
+        </div>
+        <div class="tab active">
+            Pesan (3)
+        </div>
+    </div>
+    <div class="notification-item">
+        <img alt="Profile picture of Agus - Driver" height="50"
+            src="https://storage.googleapis.com/a1aa/image/2zMfbeZYTFhsH0wjdQbbXrLgOKuAfDmJR8AkPr5JAH5OOUbnA.jpg"
+            width="50" />
+        <div class="details">
+            <div class="name">
+                Agus - Driver
+            </div>
+            <div>
+                K 6078 KK
+            </div>
+            <div class="time">
+                20 min ago
+            </div>
+        </div>
+        <i class="fas fa-chevron-right">
+        </i>
+    </div>
+    <div class="footer">
+        <div class="footer-item">
+            <i class="fas fa-home">
+            </i>
+            <div>
+                Beranda
+            </div>
+        </div>
+        <div class="footer-item">
+            <i class="fas fa-heart">
+            </i>
+            <div>
+                Favorit
+            </div>
+        </div>
+        <div class="footer-item">
+            <i class="fas fa-clipboard">
+            </i>
+            <div>
+                Pesanan
+            </div>
+        </div>
+        <div class="footer-item">
+            <i class="fas fa-bell">
+            </i>
+            <div>
+                Notifikasi
+            </div>
+        </div>
+        <div class="footer-item">
+            <i class="fas fa-user">
+            </i>
+            <div>
+                Akun
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

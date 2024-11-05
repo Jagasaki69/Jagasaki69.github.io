@@ -1,0 +1,306 @@
+<html>
+
+<head>
+    <title>
+        Pesanan Saya
+    </title>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #E0E0E0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .header {
+            background-color: #7B1E1E;
+            color: white;
+            padding: 10px;
+            position: relative;
+        }
+
+        .header .back-icon,
+        .header .chat-icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .header .back-icon {
+            left: 10px;
+        }
+
+        .header .chat-icon {
+            right: 10px;
+        }
+
+        .header h1 {
+            text-align: center;
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .nav-tabs {
+            margin-top: 10px;
+            border-bottom: 1px solid #7B1E1E;
+        }
+
+        .nav-tabs .nav-link {
+            color: #7B1E1E;
+        }
+
+        .nav-tabs .nav-link.active {
+            color: #7B1E1E;
+            border-color: #7B1E1E;
+        }
+
+        .order-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .order-card img {
+            border-radius: 10px;
+        }
+
+        .order-card .order-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .order-card .order-info .order-details {
+            display: flex;
+            align-items: center;
+        }
+
+        .order-card .order-info .order-details img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .order-card .order-info .order-details .order-text {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .order-card .order-info .order-details .order-text .price {
+            font-weight: bold;
+        }
+
+        .order-card .order-info .order-details .order-text .items {
+            color: #888;
+        }
+
+        .order-card .order-info .order-id {
+            color: #888;
+            font-size: 12px;
+        }
+
+        .order-card .order-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .order-card .order-actions .btn {
+            width: 48%;
+        }
+
+        .order-card .order-actions .btn-track {
+            background-color: #FFD700;
+            color: black;
+        }
+
+        .order-card .order-actions .btn-cancel {
+            border: 1px solid #FFD700;
+            color: #7B1E1E;
+        }
+
+        .footer {
+            background-color: #FFD700;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .footer .footer-icon {
+            text-align: center;
+            color: #333;
+        }
+
+        .footer .footer-icon i {
+            font-size: 20px;
+        }
+
+        .footer .footer-icon p {
+            margin: 0;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <i class="fas fa-arrow-left back-icon">
+        </i>
+        <h1>
+            Pesanan Saya
+        </h1>
+        <i class="fas fa-comment-dots chat-icon">
+        </i>
+    </div>
+    <ul class="nav nav-tabs justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">
+                Diproses
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                Riwayat
+            </a>
+        </li>
+    </ul>
+    <div class="container mt-3">
+        <div class="order-card">
+            <div class="order-info">
+                <div class="order-details">
+                    <img alt="Pizza Hot" height="50"
+                        src="https://storage.googleapis.com/a1aa/image/ZtgebVuYEQzAMq7SsJ0wdicQOvOs3Xe3WxlNeWFAQaWDCUbnA.jpg"
+                        width="50" />
+                    <div class="order-text">
+                        <div class="price">
+                            Rp.50.000
+                        </div>
+                        <div class="name">
+                            Pizza Hot
+                        </div>
+                        <div class="items">
+                            03 Items
+                        </div>
+                    </div>
+                </div>
+                <div class="order-id">
+                    #162432
+                </div>
+            </div>
+            <div class="order-actions">
+                <button class="btn btn-track">
+                    Lacak Pesanan
+                </button>
+                <button class="btn btn-cancel">
+                    Batalkan
+                </button>
+            </div>
+        </div>
+        <div class="order-card">
+            <div class="order-info">
+                <div class="order-details">
+                    <img alt="French Fries" height="50"
+                        src="https://storage.googleapis.com/a1aa/image/UVn0ridTrzKtC10B4QuRmRWo9wsfEcyTJVpo6Sx7OeDCBqtTA.jpg"
+                        width="50" />
+                    <div class="order-text">
+                        <div class="price">
+                            Rp.80.235
+                        </div>
+                        <div class="name">
+                            French Fries
+                        </div>
+                        <div class="items">
+                            12 Items
+                        </div>
+                    </div>
+                </div>
+                <div class="order-id">
+                    #242432
+                </div>
+            </div>
+            <div class="order-actions">
+                <button class="btn btn-track">
+                    Lacak Pesanan
+                </button>
+                <button class="btn btn-cancel">
+                    Batalkan
+                </button>
+            </div>
+        </div>
+        <div class="order-card">
+            <div class="order-info">
+                <div class="order-details">
+                    <img alt="Starbaks" height="50"
+                        src="https://storage.googleapis.com/a1aa/image/weg7KUkvMjxYKSbiw7HGdoQdKr2KP25WoM6APybn2qlfAqtTA.jpg"
+                        width="50" />
+                    <div class="order-text">
+                        <div class="price">
+                            Rp.21.000
+                        </div>
+                        <div class="name">
+                            Starbaks
+                        </div>
+                        <div class="items">
+                            01 Items
+                        </div>
+                    </div>
+                </div>
+                <div class="order-id">
+                    #240112
+                </div>
+            </div>
+            <div class="order-actions">
+                <button class="btn btn-track">
+                    Lacak Pesanan
+                </button>
+                <button class="btn btn-cancel">
+                    Batalkan
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-icon">
+            <i class="fas fa-home">
+            </i>
+            <p>
+                Beranda
+            </p>
+        </div>
+        <div class="footer-icon">
+            <i class="fas fa-heart">
+            </i>
+            <p>
+                Favorit
+            </p>
+        </div>
+        <div class="footer-icon">
+            <i class="fas fa-clipboard-list">
+            </i>
+            <p>
+                Pesanan
+            </p>
+        </div>
+        <div class="footer-icon">
+            <i class="fas fa-bell">
+            </i>
+            <p>
+                Notifikasi
+            </p>
+        </div>
+        <div class="footer-icon">
+            <i class="fas fa-user">
+            </i>
+            <p>
+                Akun
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
