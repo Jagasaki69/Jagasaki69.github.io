@@ -1,0 +1,118 @@
+
+body {
+    background-color: #d3d3d3;
+    font-family: Arial, sans-serif;
+}
+
+.search-bar {
+    background-color: #6a1b0c;
+    border-radius: 25px;
+    padding: 10px;
+    color: white;
+}
+
+.search-bar input {
+    border: none;
+    background: none;
+    color: white;
+    width: 80%;
+}
+
+.search-bar .fa-search {
+    margin-right: 10px;
+}
+
+.search-bar .fa-shopping-cart {
+    background-color: #c0392b;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.category img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.category p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.btn-custom {
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-location {
+    background-color: #c0392b;
+}
+
+.btn-voucher {
+    background-color: #f1c40f;
+    color: black;
+}
+
+.recommendation {
+    background-color: #6a1b0c;
+    border-radius: 25px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.food-item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.food-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.food-item .details {
+    margin-left: 10px;
+}
+
+.food-item .details h5 {
+    font-weight: bold;
+}
+
+.food-item .details .rating {
+    color: #f1c40f;
+}
+
+.food-item .details .discount {
+    background-color: #f1c40f;
+    border-radius: 5px;
+    padding: 2px 5px;
+    font-size: 12px;
+    color: black;
+}
+
+.footer {
+    background-color: #f1c40f;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .nav-item {
+    text-align: center;
+}
+
+.footer .nav-item i {
+    font-size: 20px;
+}
+
+.footer .nav-item p {
+    margin: 0;
+    font-size: 12px;
+}

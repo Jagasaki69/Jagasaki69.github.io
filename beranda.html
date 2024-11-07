@@ -7,133 +7,56 @@
     <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <style>
-        body {
-            background-color: #d3d3d3;
-            font-family: Arial, sans-serif;
-        }
 
-        .search-bar {
-            background-color: #6a1b0c;
-            border-radius: 25px;
-            padding: 10px;
-            color: white;
-        }
-
-        .search-bar input {
-            border: none;
-            background: none;
-            color: white;
-            width: 80%;
-        }
-
-        .search-bar .fa-search {
-            margin-right: 10px;
-        }
-
-        .search-bar .fa-shopping-cart {
-            background-color: #c0392b;
-            border-radius: 50%;
-            padding: 10px;
-        }
-
-        .category img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-        }
-
-        .category p {
-            margin-top: 5px;
-            font-size: 14px;
-        }
-
-        .btn-custom {
-            border-radius: 10px;
-            padding: 10px;
-            color: white;
-            font-weight: bold;
-        }
-
-        .btn-location {
-            background-color: #c0392b;
-        }
-
-        .btn-voucher {
-            background-color: #f1c40f;
-            color: black;
-        }
-
-        .recommendation {
-            background-color: #6a1b0c;
-            border-radius: 25px;
-            padding: 10px;
-            color: white;
-            font-weight: bold;
-        }
-
-        .food-item {
-            background-color: white;
-            border-radius: 10px;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-
-        .food-item img {
-            width: 100px;
-            height: 100px;
-            border-radius: 10px;
-        }
-
-        .food-item .details {
-            margin-left: 10px;
-        }
-
-        .food-item .details h5 {
-            font-weight: bold;
-        }
-
-        .food-item .details .rating {
-            color: #f1c40f;
-        }
-
-        .food-item .details .discount {
-            background-color: #f1c40f;
-            border-radius: 5px;
-            padding: 2px 5px;
-            font-size: 12px;
-            color: black;
-        }
-
-        .footer {
-            background-color: #f1c40f;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        .footer .nav-item {
-            text-align: center;
-        }
-
-        .footer .nav-item i {
-            font-size: 20px;
-        }
-
-        .footer .nav-item p {
-            margin: 0;
-            font-size: 12px;
-        }
-    </style>
 </head>
 
+<link rel="stylesheet" href="/style css/beranda.css">
+
 <body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <nav class="navbar bg-body-tertiary">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="/image/logo.jpg" alt="Logo" width="30" height="24"
+                            class="d-inline-block align-text-top">
+                        Speed Dish
+                    </a>
+                </div>
+            </nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Favorit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pesanan</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Akun
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Profil</a></li>
+                            <li><a class="dropdown-item" href="#">Notifikasi</a></li>
+                            <li><a class="dropdown-item" href="#">Keranjang</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="container mt-3">
         <div class="d-flex justify-content-between align-items-center">
-            <span>
-                9:41
-            </span>
             <div class="d-flex align-items-center">
                 <span>
                     Hai, Anastasya
@@ -346,43 +269,7 @@
             </div>
         </div>
     </div>
-    <div class="footer d-flex justify-content-around">
-        <div class="nav-item">
-            <i class="fas fa-home">
-            </i>
-            <p>
-                Beranda
-            </p>
-        </div>
-        <div class="nav-item">
-            <i class="fas fa-heart">
-            </i>
-            <p>
-                Favorit
-            </p>
-        </div>
-        <div class="nav-item">
-            <i class="fas fa-clipboard-list">
-            </i>
-            <p>
-                Pesanan
-            </p>
-        </div>
-        <div class="nav-item">
-            <i class="fas fa-bell">
-            </i>
-            <p>
-                Notifikasi
-            </p>
-        </div>
-        <div class="nav-item">
-            <i class="fas fa-user">
-            </i>
-            <p>
-                Akun
-            </p>
-        </div>
-    </div>
+
 </body>
 
 </html>
