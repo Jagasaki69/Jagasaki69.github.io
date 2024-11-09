@@ -7,133 +7,59 @@
     <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <style>
-        body {
-            background-color: #d3d3d3;
-            font-family: Arial, sans-serif;
-        }
 
-        .search-bar {
-            background-color: #6a1b0c;
-            border-radius: 25px;
-            padding: 10px;
-            color: white;
-        }
-
-        .search-bar input {
-            border: none;
-            background: none;
-            color: white;
-            width: 80%;
-        }
-
-        .search-bar .fa-search {
-            margin-right: 10px;
-        }
-
-        .search-bar .fa-shopping-cart {
-            background-color: #c0392b;
-            border-radius: 50%;
-            padding: 10px;
-        }
-
-        .category img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-        }
-
-        .category p {
-            margin-top: 5px;
-            font-size: 14px;
-        }
-
-        .btn-custom {
-            border-radius: 10px;
-            padding: 10px;
-            color: white;
-            font-weight: bold;
-        }
-
-        .btn-location {
-            background-color: #c0392b;
-        }
-
-        .btn-voucher {
-            background-color: #f1c40f;
-            color: black;
-        }
-
-        .recommendation {
-            background-color: #6a1b0c;
-            border-radius: 25px;
-            padding: 10px;
-            color: white;
-            font-weight: bold;
-        }
-
-        .food-item {
-            background-color: white;
-            border-radius: 10px;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-
-        .food-item img {
-            width: 100px;
-            height: 100px;
-            border-radius: 10px;
-        }
-
-        .food-item .details {
-            margin-left: 10px;
-        }
-
-        .food-item .details h5 {
-            font-weight: bold;
-        }
-
-        .food-item .details .rating {
-            color: #f1c40f;
-        }
-
-        .food-item .details .discount {
-            background-color: #f1c40f;
-            border-radius: 5px;
-            padding: 2px 5px;
-            font-size: 12px;
-            color: black;
-        }
-
-        .footer {
-            background-color: #f1c40f;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        .footer .nav-item {
-            text-align: center;
-        }
-
-        .footer .nav-item i {
-            font-size: 20px;
-        }
-
-        .footer .nav-item p {
-            margin: 0;
-            font-size: 12px;
-        }
-    </style>
 </head>
 
+<link rel="stylesheet" href="/style css/beranda.css">
+
 <body>
+
+    <nav class="navbar navbar-expand-lg shadow-lg" >
+        <div class="container" >
+            <nav class="navbar bg-body-tertiary"  >
+                <div class="container">
+                    <a class="navbar-brand" href="#" >
+                        <img src="/image/logo2.png" alt="Logo" width="40" height="34"
+                            class="d-inline-block align-text-top">
+                        Speed Dish
+                    </a>
+                </div>
+            </nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Favorit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pesanan</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Akun
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Profil</a></li>
+                            <li><a class="dropdown-item" href="#">Notifikasi</a></li>
+                            <li><a class="dropdown-item" href="#">Keranjang</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="container mt-3">
         <div class="d-flex justify-content-between align-items-center">
-            <span>
-                9:41
-            </span>
             <div class="d-flex align-items-center">
                 <span>
                     Hai, Anastasya
@@ -144,54 +70,81 @@
                     Sidorekso
                 </span>
             </div>
+
         </div>
-        <div class="search-bar mt-3 d-flex align-items-center">
-            <i class="fas fa-search">
-            </i>
-            <input placeholder="Cari Makanan" type="text" />
-            <i class="fas fa-shopping-cart">
-            </i>
-        </div>
-        <div class="d-flex justify-content-around mt-3">
-            <div class="category text-center">
-                <img alt="Rice" height="50"
-                    src="https://storage.googleapis.com/a1aa/image/HRsAE1waeV23diWMa25fr3SvjJ4KA4hgalcV4hfne8IqOm2OB.jpg"
-                    width="50" />
-                <p>
-                    Makanan
-                </p>
+        <section class="jumbotron-fluid">
+            <div class="container-fluid">
+                <h1 class="fw-bold">Pesan atau Antar Makananmu</h1>
+                <p class="text-muted">Restoran terbaik dengan harga terbaik</p>
+                <div class="search-box">
+                    <input type="text" placeholder="Cari Makanan">
+                    <button type="button">Search</button>
+                </div>
+                <div class="trending">
+                    <strong>Populer:</strong> Ayam Geprek, Burger, Pizza
+                </div>
             </div>
-            <div class="category text-center">
-                <img alt="Noodles" height="50"
-                    src="https://storage.googleapis.com/a1aa/image/lEekGmel5DmtEUFt8eL1Ml59MFv9U8ru2vPcEv5A0UPWHTbnA.jpg"
-                    width="50" />
-                <p>
-                    Mie
-                </p>
-            </div>
-            <div class="category text-center">
-                <img alt="Drink" height="50"
-                    src="https://storage.googleapis.com/a1aa/image/NiTtYPq5icaDL9gBNsGiCtgJeUinewECXmaXEJWCh4xujptTA.jpg"
-                    width="50" />
-                <p>
-                    Minuman
-                </p>
-            </div>
-            <div class="category text-center">
-                <img alt="Snack" height="50"
-                    src="https://storage.googleapis.com/a1aa/image/NG3t4FXvXYodNRo3mkbmaA0Nc98BdRNI2lR7cJFYbCN8Ya7E.jpg"
-                    width="50" />
-                <p>
-                    Snack
-                </p>
-            </div>
-            <div class="category text-center">
-                <img alt="Coffee" height="50"
-                    src="https://storage.googleapis.com/a1aa/image/1LrXR8fWqxWWNyD1aW9BTEzjTGT6EYNG7exOvg0SCWHxjptTA.jpg"
-                    width="50" />
-                <p>
-                    Kopi
-                </p>
+        </section>
+
+
+        <div class="container mt-4">
+            <h4>
+                Top Categories
+            </h4>
+            <div class="category-container">
+                <div class="category-card">
+                    <img alt="Image of Pizza" height="115"
+                        src="https://storage.googleapis.com/a1aa/image/6cQNEHc1xt6NJlu0tvOc7fiSu43KfRuqfYhQUKHN8edrt17OB.jpg"
+                        width="170" />
+                    <span>
+                        Pizza
+                    </span>
+                </div>
+
+                <div class="category-card">
+                    <img alt="Image of Sushi" height="115"
+                        src="https://storage.googleapis.com/a1aa/image/RpcGfTlRvqTxSiCaeVfWnMQHIbuTt1HoQasZNNdMmcHw26dnA.jpg"
+                        width="170" />
+                    <span>
+                        Sushi
+                    </span>
+                </div>
+                <div class="category-card">
+                    <img alt="Image of Dessert" height="115"
+                        src="https://storage.googleapis.com/a1aa/image/NFL7ME9FDyKjC5cNwL982f2S7r9fvNusJ1rb9TzSdtZXb9uTA.jpg"
+                        width="170" />
+                    <span>
+                        Dessert
+                    </span>
+                </div>
+                <div class="category-card">
+                    <img alt="Image of Hamburger" height="115"
+                        src="https://storage.googleapis.com/a1aa/image/Gd8908Ve4vzUIyfyFMFroyVc8Hp9XQKSolNeCpTo86cp26dnA.jpg"
+                        width="170" />
+                    <span>
+                        Hamburger
+                    </span>
+                </div>
+                <div class="category-card">
+                    <img alt="Image of Ice Cream" height="115"
+                        src="https://storage.googleapis.com/a1aa/image/03oe1Jh0C5XuASFOjRcf3CMpxeJMkrwKpW30bcDzideYt17OB.jpg"
+                        width="170" />
+                    <span>
+                        Ice Cream
+                    </span>
+                </div>
+                <div class="category-card">
+                    <img alt="Image of Kebab" height="115"
+                        src="https://storage.googleapis.com/a1aa/image/d3fS6yeyIgpg90Jp6IOZ3oC8jqsSV8fafXsIlNL9nf6bar3dC.jpg"
+                        width="170" />
+                    <span>
+                        Kebab
+                    </span>
+                </div>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right">
+                    </i>
+                </div>
             </div>
         </div>
         <div class="d-flex justify-content-between mt-3">
@@ -205,46 +158,210 @@
                 <br />
                 Cek Disini
             </button>
+
         </div>
-        <div class="recommendation mt-3 mb-3">
-            Rekomendasi
-        </div>
-        <div class="row">
-        <div class="food-item d-flex  col-12 col-md-6">
-            <img alt="Martabak Manis Kexia" height="100"
-                src="https://storage.googleapis.com/a1aa/image/N9cLDE1ymb68CNKTWZlXd3v0Baabf3CGEMeAnrBx8hZzjptTA.jpg"
-                width="100" />
-            <div class="details">
-                <h5>
-                    Martabak Manis Kexia
-                </h5>
-                <p>
-                    Snack | Sealasar
-                </p>
-                <div class="d-flex align-items-center">
-                    <span class="rating">
-                        <i class="fas fa-star">
-                        </i>
-                        4.9 (156)
-                    </span>
-                    <span class="ms-2">
-                        0.5km
-                    </span>
-                    <span class="ms-2">
-                        10min
-                    </span>
+        <div class="container mt-4">
+            <div class="promo-banner">
+                <div>
+                    <div class="promo-text">Rekomendasi</div>
+                    <div class="promo-subtext">Tak perlu keluar rumah untuk menikmati hidangan terbaik! Temukan beragam
+                        pilihan makanan lezat dan pesan hanya dengan beberapa klik.</div>
                 </div>
-                <div class="d-flex mt-2">
-                    <span class="discount me-2">
-                        Diskon 100%
-                    </span>
-                    <span class="discount">
-                        Diskon Ongkir
-                    </span>
+                <div class="promo-icon">
+                    <i class="fas fa-motorcycle"></i>
                 </div>
             </div>
         </div>
-        <div class="food-item d-flex col-12 col-md-6">
+        <div class="container mt-5">
+            <div class="header">
+                <h2>
+                    Top Rated Restaurants
+                </h2>
+                <a href="#">
+                    View All →
+                </a>
+            </div>
+            <p>
+                Cum doctus civibus efficiantur in imperdiet deterruisset.
+            </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="restaurant-card">
+                        <img alt="Image of La Monnalisa restaurant" height="233"
+                            src="https://storage.googleapis.com/a1aa/image/mv2mSA1DV1YPHVEL01f0qlucYXmI2HNez9WpNgLPC5qrqednA.jpg"
+                            width="350" />
+                        <div class="restaurant-info">
+                            <p>
+                                Italian
+                            </p>
+                            <h5>
+                                La Monnalisa
+                            </h5>
+                            <p>
+                                8 Patriot Square E2 9NF
+                            </p>
+                            <span class="badge">
+                                <i class="fas fa-fire">
+                                </i>
+                                -30%
+                            </span>
+                            Average price $35
+                        </div>
+                        <div class="restaurant-rating">
+                            <i class="fas fa-star">
+                            </i>
+                            9.5
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="restaurant-card">
+                        <img alt="Image of Mr. Pepper restaurant" height="233"
+                            src="https://storage.googleapis.com/a1aa/image/2xdrdiHEbooqFFfhyHY3j5rRSiRYNAA3q9jbsJomyBtXVfuTA.jpg"
+                            width="350" />
+                        <div class="restaurant-info">
+                            <p>
+                                Vegetarian
+                            </p>
+                            <h5>
+                                Mr. Pepper
+                            </h5>
+                            <p>
+                                27 Old Gloucester St, 4563
+                            </p>
+                            <span class="badge">
+                                <i class="fas fa-fire">
+                                </i>
+                                -30%
+                            </span>
+                            Average price $20
+                        </div>
+                        <div class="restaurant-rating">
+                            <i class="fas fa-star">
+                            </i>
+                            9.5
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="restaurant-card">
+                        <img alt="Image of Alliance restaurant" height="233"
+                            src="https://storage.googleapis.com/a1aa/image/7FY8tKe3YNydfkaGbdLLf7r3uurVyexteuB4rVngi5PuV13dC.jpg"
+                            width="350" />
+                        <div class="restaurant-info">
+                            <p>
+                                Mexican
+                            </p>
+                            <h5>
+                                Alliance
+                            </h5>
+                            <p>
+                                27 Old Gloucester St, 4563
+                            </p>
+                            <span class="badge">
+                                <i class="fas fa-fire">
+                                </i>
+                                -40%
+                            </span>
+                            Average price $30
+                        </div>
+                        <div class="restaurant-rating">
+                            <i class="fas fa-star">
+                            </i>
+                            8.0
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="restaurant-card">
+                        <img alt="Image of Dragon Tower restaurant" height="233"
+                            src="https://storage.googleapis.com/a1aa/image/2nwgey8j433cEqtU6UVzSDShko8CAL6pv7LHqkfDhupsqednA.jpg"
+                            width="350" />
+                        <div class="restaurant-info">
+                            <p>
+                                Chinese
+                            </p>
+                            <h5>
+                                Dragon Tower
+                            </h5>
+                            <p>
+                                22 Hertsmere Rd E14 4ED
+                            </p>
+                            <span class="badge">
+                                <i class="fas fa-fire">
+                                </i>
+                                -50%
+                            </span>
+                            Average price $35
+                        </div>
+                        <div class="restaurant-rating">
+                            <i class="fas fa-star">
+                            </i>
+                            8.0
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="restaurant-card">
+                        <img alt="Image of Sushi Gold restaurant" height="233"
+                            src="https://storage.googleapis.com/a1aa/image/LDBBObSN7RrrIZLJWh75v3ZJSAFXGb5z17L4l3jemSuUVfuTA.jpg"
+                            width="350" />
+                        <div class="restaurant-info">
+                            <p>
+                                Sushi - Japanese
+                            </p>
+                            <h5>
+                                Sushi Gold
+                            </h5>
+                            <p>
+                                Old Shire Ln EN9 3RX
+                            </p>
+                            <span class="badge">
+                                <i class="fas fa-fire">
+                                </i>
+                                -25%
+                            </span>
+                            Average price $20
+                        </div>
+                        <div class="restaurant-rating">
+                            <i class="fas fa-star">
+                            </i>
+                            9.0
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="restaurant-card">
+                        <img alt="Image of Bella Napoli restaurant" height="233"
+                            src="https://storage.googleapis.com/a1aa/image/FPBWJ38CIqZaPlaSYAx436QWVOt7bWa3g21jo7Q5idIqqv7E.jpg"
+                            width="350" />
+                        <div class="restaurant-info">
+                            <p>
+                                Pizza - Italian
+                            </p>
+                            <h5>
+                                Bella Napoli
+                            </h5>
+                            <p>
+                                135 Newtownards Road BT4
+                            </p>
+                            <span class="badge">
+                                <i class="fas fa-fire">
+                                </i>
+                                -45%
+                            </span>
+                            Average price $25
+                        </div>
+                        <div class="restaurant-rating">
+                            <i class="fas fa-star">
+                            </i>
+                            8.5
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="food-item d-flex">
             <img alt="Bubur Ketan Hitam Selera" height="100"
                 src="https://storage.googleapis.com/a1aa/image/7DjR8ZHUfOT4ZyaQNas23iZ1GwGi9dLzcCfvdzlUe2tqHTbnA.jpg"
                 width="100" />
@@ -278,7 +395,7 @@
                 </div>
             </div>
         </div>
-        <div class="food-item d-flex col-12 col-md-6">
+        <div class="food-item d-flex">
             <img alt="Cireng Ayam Mozarela Pudjasera" height="100"
                 src="https://storage.googleapis.com/a1aa/image/jIFeWudclYWCWaH8H7eorybl0a0fyojefEndCY31RLKDfYa7E.jpg"
                 width="100" />
@@ -312,7 +429,7 @@
                 </div>
             </div>
         </div>
-        <div class="food-item d-flex col-12 col-md-6">
+        <div class="food-item d-flex">
             <img alt="Belut Cabe Ijo Socha" height="100"
                 src="https://storage.googleapis.com/a1aa/image/6VbJjwzrjUpL6wOQBqZm4yVv3L9UOcLqj8hIZuGqGv5X5LtdC.jpg"
                 width="100" />
@@ -348,6 +465,7 @@
         </div>
     </div>
 
+<<<<<<< HEAD
     </div>
     <div class="footer d-flex justify-content-around">
         <div class="nav-item">
@@ -391,6 +509,27 @@
             </p>
         </div>
     </div>
+=======
+    <div class="waves-container">
+        <div class="waves">
+            <svg width="100%" height="200px" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#6b1c0c" />
+                    <stop offset="50%" stop-color="#bf392a" />
+                    <stop offset="100%" stop-color="#6b1c0c" />
+                </linearGradient>
+                <path fill="url(#grad1)" d="M0 67 C 273,183 822,-40 1920.00,106 V 359 H 0  V 67 Z">
+                    <animate repeatCount="indefinite" fill="url(#grad1)" attributeName="d" dur="15s" attributeType="XML"
+                        values="M0 77  C 473,283 822,-40 1920,116  V 359 H 0  V 67 Z; M0 77 C 473,-40 1222,283 1920,136  V 359 H 0 V 67 Z; M0 77 C 973,260 1722,-53 1920,120  V 359  H 0  V 67  Z; M0 77 C 473,283 822,-40 1920,116 V 359 H 0 V 67 Z">
+                    </animate>
+                </path>
+            </svg>
+        </div>
+
+
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#6a1b0c" fill-opacity="1" d="M0,192L26.7,165.3C53.3,139,107,85,160,101.3C213.3,117,267,203,320,229.3C373.3,256,427,224,480,192C533.3,160,587,128,640,138.7C693.3,149,747,203,800,208C853.3,213,907,171,960,160C1013.3,149,1067,171,1120,170.7C1173.3,171,1227,149,1280,149.3C1333.3,149,1387,171,1413,181.3L1440,192L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z" style="--darkreader-inline-fill: #55160a;" data-darkreader-inline-fill=""></path></svg> -->
+
+>>>>>>> 950c0f6e40cd58d6666d6da4458e4f6302952754
 </body>
 
 </html>
