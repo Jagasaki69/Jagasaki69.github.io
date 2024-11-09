@@ -1,0 +1,91 @@
+
+        body {
+            background: rgb(241,196,15);
+            background: linear-gradient(0deg, #BF392A 22%, rgb(241,196,15) 100%);
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            padding-top: 50px;
+        }
+
+        .logo img {
+            width: 250px;
+            height: auto;
+            padding-bottom: 3rem;
+        }
+
+        .title {
+            font-size: 48px;
+            font-weight: bold;
+            color: #FFD700;
+        }
+
+        .subtitle {
+            font-size: 48px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .form-control {
+            background-color: #FFD700;
+            border: none;
+            border-radius: 30px;
+            padding: 10px 20px;
+            margin-bottom: auto;
+            color: #000;
+            font-size: 18px;
+        }
+
+        .form-control::placeholder {
+            color: #000;
+        }
+
+        .input-group-text {
+            background-color: #FFD700;
+            border: none;
+            border-radius: 30px 0 0 30px;
+            color: #6A1B0C;
+        }
+
+        .btn-primary {
+            background-color: #fff;
+            color: #6A1B0C;
+            border: none;
+            border-radius: 30px;
+            padding: 10px 20px;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .btn-secondary {
+            background-color: #6A1B0C;
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+
+        .forgot-password {
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .register-section {
+            background-color: #D3D3D3;
+            padding: 20px 0;
+            border-radius: 30px 30px 0 0;
+            bottom: 0%;
+            position: fixed;
+
+        }
+
+        .register-section p {
+            color: #6A1B0C;
+            font-size: 18px;
+        }

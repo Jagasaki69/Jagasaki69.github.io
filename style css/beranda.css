@@ -1,12 +1,16 @@
 
 body {
-    bbackground: rgb(241,196,15);
-    background: linear-gradient(180deg, rgba(241,196,15,1) 9%, rgba(255,255,255,1) 100%);
+    background: rgb(241,196,15);
+    background: linear-gradient(0deg, rgba(241,196,15,1) 22%, rgba(255,255,255,1) 100%);
     font-family: Arial, sans-serif;
 }
 
+.navbar {
+    background-color: #f1c40f;
+}
+
 .search-bar {
-    background-color: #6a1b0c;
+    background-color: #c0392b;
     border-radius: 25px;
     padding: 10px;
     color: white;
@@ -142,7 +146,7 @@ body {
 .search-box button {
     width: 100%;
     padding: 15px;
-    background-color: #6a1b0c;
+    background-color: #c0392b;
     border: none;
     border-radius: 4px;
     color: white;
@@ -208,4 +212,67 @@ body {
 }
 .promo-icon {
     font-size: 2rem;
+}
+
+
+
+.waves-container{
+    margin-top: 200px;
+}
+
+
+.restaurant-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.restaurant-card img {
+    border-radius: 8px;
+    margin-right: 20px;
+}
+.restaurant-info {
+    flex-grow: 1;
+}
+.restaurant-info h5 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.restaurant-info p {
+    margin: 5px 0;
+    color: #6c757d;
+}
+.restaurant-info .badge {
+    background-color: #ff5722;
+    color: #ffffff;
+    font-size: 0.875rem;
+    margin-right: 10px;
+}
+.restaurant-rating {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    color: #28a745;
+}
+.restaurant-rating i {
+    margin-right: 5px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.header h2 {
+    margin: 0;
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+.header a {
+    color: #ff0000;
+    text-decoration: none;
 }
