@@ -10,53 +10,36 @@
     
 
 <body>
-    <div class="container">
-        <div class="logo">
-            <img alt="Delivery person on a red scooter with groceries" height="150"
-                src="/image/logo2.png"
-                width="150" />
-        </div>
-        <!-- <div class="title">
-            Speed
-        </div>
-        <div class="subtitle">
-            Dish
-        </div> -->
-        <form>
-            <div class="input-group mb-3">
-                <span class="input-group-text">
-                    <i class="fas fa-user">
-                    </i>
-                </span>
-                <input class="form-control" placeholder="Username" type="text" />
+     <div class="center">
+         <input type="checkbox" id="show">
+         <label for="show" class="show-btn">View Form</label>
+         <div class="container">
+            <label for="show" class="close-btn fas fa-times" title="close"></label>
+            <div class="text">
+               Login Form
             </div>
-            <div class="input-group mb-3">
-                <span class="input-group-text">
-                    <i class="fas fa-lock">
-                    </i>
-                </span>
-                <input class="form-control" placeholder="Password" type="password" />
-                <span class="input-group-text">
-                    <i class="fas fa-eye">
-                    </i>
-                </span>
-            </div>
-            <button class="btn btn-primary" type="submit">
-                Masuk
-            </button>
-            <div class="forgot-password" type="submit">
-                Lupa Password?
-            </div>
-        </form>
-    </div>
-    <div class="register-section">
-        <p>
-            Belum Punya Akun?
-        </p>
-        <button class="btn btn-secondary">
-            Buat Akun
-        </button>
-    </div>
+            <form action="#">
+               <div class="data">
+                  <label>Email or Phone</label>
+                  <input type="text" required>
+               </div>
+               <div class="data">
+                  <label>Password</label>
+                  <input type="password" required>
+               </div>
+               <div class="forgot-pass">
+                  <a href="#">Forgot Password?</a>
+               </div>
+               <div class="btn">
+                  <div class="inner"></div>
+                  <button type="submit">login</button>
+               </div>
+               <div class="signup-link">
+                  Not a member? <a href="#">Signup now</a>
+               </div>
+            </form>
+         </div>
+      </div>
 </body>
 
 </html>
