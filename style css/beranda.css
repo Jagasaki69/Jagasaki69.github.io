@@ -1,12 +1,12 @@
 
 body {
-    background: rgb(241,196,15);
-    background: linear-gradient(0deg, rgba(241,196,15,1) 22%, rgba(255,255,255,1) 100%);
+    background: rgb(255,255,255);
+    background: linear-gradient(45deg, rgba(255,255,255,1) 45%, rgba(241,196,15,1) 100%);
     font-family: Arial, sans-serif;
 }
 
 .navbar {
-    background-color: #f1c40f;
+    background-color: #ffffff;
 }
 
 .search-bar {
@@ -156,7 +156,7 @@ body {
 .trending {
     margin-top: 20px;
     font-size: 14px;
-    color: #666;
+    color: #000000;
 }
 
 .category-card {
