@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <title>
         Akun
@@ -11,10 +12,97 @@
 
 </head>
 
+
+<style>
+    .navbar {
+        background-color: #6a1b0c;
+    }
+
+    .navbar-brand {
+        font-weight: bold;
+        color: white;
+    }
+
+    .navbar-brand:hover {
+        color: #f1c40f;
+    }
+
+    .nav-link {
+        color: white !important;
+    }
+
+    .nav-link:hover {
+        color: #f1c40f !important;
+    }
+
+    .speed-text {
+        font-family: 'Galada', sans-serif;
+        color: #FBE87B;
+    }
+
+    .dish-text {
+        font-family: 'Inter', sans-serif;
+        color: #FFFFFF;
+    }
+
+    .cart-icon {
+        font-size: 1.5rem;
+        color: #6a1b0c;
+        background-color: #fff;
+        border-radius: 50%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .cart-icon:hover {
+        transform: scale(1.1);
+        color: #8e2d16;
+    }
+
+    .greetings {
+        padding-top: 1em;
+        padding-bottom: 1rem;
+        padding-right: 37rem;
+    }
+</style>
+</head>
+
 <body>
-    <div class="header">
-        Akun
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <span class="speed-text">Speed</span>
+                <span class="dish-text">Dish</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Favorit</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pesanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Notifikasi</a></li>
+                    <li class="nav-item d-flex align-items-center">
+                        <a class="nav-link" href="#">Account</a>
+                        <i class="fas fa-shopping-cart cart-icon"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Search Bar and Cart Icon -->
+    <div class="container mt-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex align-items-center">
+                <h6 class="mb-0">Hai, Anastasya</h6>
+            </div>
+        </div>
     </div>
+
     <div class="profile">
         <img alt="Profile picture of a person standing in front of a scenic background" height="80"
             src="https://storage.googleapis.com/a1aa/image/pZHejixAiu3nf0P3C9RJksKoIPJ0OJbnKfxsGPQIjfeikLtdC.jpg"
@@ -116,7 +204,6 @@
             </i>
         </div>
         <div class="menu-item">
-            <a class="nav-link" href="login.html">
             <div>
                 <i class="fas fa-cog">
                 </i>
@@ -126,20 +213,17 @@
             </div>
             <i class="fas fa-chevron-right">
             </i>
-            </a>
         </div>
         <div class="menu-item">
-            <a class="nav-link" href="login.html">
-                <div>
-                    <i class="fas fa-sign-out-alt">
-                    </i>
-                    <span>
-                        Log Out
-                    </span>
-                </div>
-                <i class="fas fa-chevron-right">
+            <div>
+                <i class="fas fa-sign-out-alt">
                 </i>
-            </a>
+                <span>
+                    Log Out
+                </span>
+            </div>
+            <i class="fas fa-chevron-right">
+            </i>
         </div>
     </div>
 
