@@ -18,23 +18,27 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 110vh;
-    background: #b89900;
+    min-height: 100vh;
+    background: #f3ede1;;
+}
+.logo {
+    width: 100px; /* Adjust size as needed */
+    margin-bottom: 20px;
 }
 .nav{
-    position: fixed;
+    position: fixed;    
     top: 0;
     display: flex;
     justify-content: space-around;
     width: 100%;
     height: 600px;
     line-height: 100px;
-    background: linear-gradient(rgb(169, 0, 0), transparent);
-    z-index: 100;
+    background: linear-gradient(rgba(138, 54, 15, 0.85), transparent);
 }
-.nav-logo img{
-    width: 100px;
-    height: auto;
+.nav-logo p{
+    color: #F3EDE1;
+    font-size: 25px;
+    font-weight: 600;
 }
 .nav-menu ul{
     display: flex;
@@ -42,30 +46,37 @@ body{
 .nav-menu ul li{
     list-style-type: none;
 }
+.nav-menu ul li .link{
+    text-decoration: none;
+    font-weight: 500;
+    color: #F3EDE1;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
 .link:hover, .active{
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #F3EDE1;
 }
 .nav-button .btn{
     width: 130px;
     height: 40px;
     font-weight: 500;
-    background: rgba(255, 255, 255, 0.4);
+    background: #ffd70f88 ; 
     border: none;
     border-radius: 30px;
     cursor: pointer;
     transition: .3s ease;
 }
 .btn:hover{
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 223, 186, 0.6);
 }
 #registerBtn{
     margin-left: 15px;
 }
 .btn.white-btn{
-    background: rgba(255, 255, 255, 0.7);
+    background:#ffd70f;;
 }
 .btn.btn.white-btn:hover{
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 223, 186, 0.6);
 }
 .nav-menu-btn{
     display: none;
@@ -96,8 +107,8 @@ body{
     flex-direction: column;
     transition: .5s ease-in-out;
 }
-.top span{
-    color: #fff;
+.top span{  
+    color: #4F3A2E;
     font-size: small;
     padding: 10px 0;
     display: flex;
@@ -105,11 +116,11 @@ body{
 }
 .top span a{
     font-weight: 500;
-    color: #fff;
+    color:#4F3A2E;
     margin-left: 5px;
 }
 header{
-    color: #fff;
+    color: #4F3A2E;
     font-size: 30px;
     text-align: center;
     padding: 10px 0 30px 0;
@@ -120,8 +131,8 @@ header{
 }
 .input-field{
     font-size: 15px;
-    background: rgba(255, 255, 255, 0.2);
-    color: #fff;
+    background: rgba(83, 45, 23, 0.15);
+    color: #4F3A2E;;
     height: 50px;
     width: 100%;
     padding: 0 10px 0 45px;
@@ -131,7 +142,7 @@ header{
     transition: .2s ease;
 }
 .input-field:hover, .input-field:focus{
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(83, 45, 23, 0.2);;
 }
 ::-webkit-input-placeholder{
     color: #fff;
@@ -145,34 +156,35 @@ header{
 .submit{
     font-size: 15px;
     font-weight: 500;
-    color: black;
+    color: #F3EDE1;
     height: 45px;
     width: 100%;
     border: none;
     border-radius: 30px;
     outline: none;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(138, 54, 15, 0.7);;
     cursor: pointer;
     transition: .3s ease-in-out;
 }
 .submit:hover{
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(138, 54, 15, 0.6); 
     box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
 }
 .two-col{
     display: flex;
     justify-content: space-between;
-    color: #fff;
+    color: #4F3A2E;;
     font-size: small;
     margin-top: 10px;
 }
 .two-col .one{
     display: flex;
     gap: 5px;
+    color: #4F3A2E;
 }
 .two label a{
     text-decoration: none;
-    color: #fff;
+    color: #4F3A2E;;
 }
 .two label a:hover{
     text-decoration: underline;
