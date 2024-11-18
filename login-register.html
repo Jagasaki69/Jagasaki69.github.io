@@ -1,128 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style css/login-register.css">
-    <title>Ludiflex | Login & Registration</title>
+    <title>Speed Dish</title>
 </head>
+
 <body>
- <div class="wrapper">
-    <nav class="nav">
-        <div class="nav-logo">
-            <img src="image/logo2.png" alt="Logo" />
-        </div>
-        
-        <div class="nav-button">
-            <button class="btn white-btn" id="loginBtn" onclick="login()">Sign In</button>
-            <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
-        </div>
-        <div class="nav-menu-btn">
-            <i class="bx bx-menu" onclick="myMenuFunction()"></i>
-        </div>
-    </nav>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <img src="/image/logo2.png" alt="Logo" class="logo">
+            </div>
 
-<!----------------------------- Form box ----------------------------------->    
-    <div class="form-box">
-        
-        <!------------------- login form -------------------------->
+            <div class="nav-button">
+                <button class="btn white-btn" id="loginBtn" onclick="login()">Sign In</button>
+                <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+        <!----------------------------- Form box ----------------------------------->
+        <div class="form-box">
 
-        <div class="login-container" id="login">
-            <div class="top">
-                <span>Tidak Punya Akun ? <a href="#" onclick="register()">Sign Up</a></span>
-                <header>Login</header>
-            </div>
-            <div class="input-box">
-                <input type="text" class="input-field" placeholder="Username or Email">
-                <i class="bx bx-user"></i>
-            </div>
-            <div class="input-box">
-                <input type="password" class="input-field" placeholder="Password">
-                <i class="bx bx-lock-alt"></i>
-            </div>
-            <div class="input-box">
-                <input type="submit" class="submit" value="Masuk">
-            </div>
-            <div class="two-col">
-                <div class="one">
-                    <input type="checkbox" id="login-check">
-                    <label for="login-check">Ingatkan Saya</label>
+            <!------------------- login form -------------------------->
+            <div class="login-container" id="login">
+                <div class="top">
+                    <span>Tidak Punya Akun ? <a href="#" onclick="register()">Sign Up</a></span>
+                    <header>Login</header>
                 </div>
-                <div class="two">
-                    <label><a href="#">Lupa Password?</a></label>
-                </div>
-            </div>
-        </div>
-
-        <!------------------- registration form -------------------------->
-        <div class="register-container" id="register">
-            <div class="top">
-                <span>Sudah Punya Akun ? <a href="#" onclick="login()">Login</a></span>
-                <header>Sign Up</header>
-            </div>
-            <div class="two-forms">
                 <div class="input-box">
-                    <input type="text" class="input-field" placeholder="Nama">
+                    <input type="text" class="input-field" placeholder="Username or Email">
                     <i class="bx bx-user"></i>
                 </div>
                 <div class="input-box">
-                    <input type="text" class="input-field" placeholder="E-mail">
-                    <i class="bx bx-user"></i>
+                    <input type="password" class="input-field" placeholder="Password">
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+                <div class="input-box">
+                    <input type="submit" class="submit" value="Sign In">
+                </div>
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" id="login-check">
+                        <label for="login-check">Ingat Saya</label>
+                    </div>
+                    <div class="two">
+                        <label><a href="#">Forgot password?</a></label>
+                    </div>
                 </div>
             </div>
-            <div class="input-box">
-                <input type="text" class="input-field" placeholder="Password">
-                <i class="bx bx-lock-alt"></i>
-            </div>
-            <div class="input-box">
-                <input type="password" class="input-field" placeholder="Repeat Password">
-                <i class="bx bx-lock-alt"></i>
-            </div>
-            <div class="input-box">
-                <input type="submit" class="submit" value="Daftar">
-            </div>
-            <div class="two-col">
-                <div class="one">
-                    <input type="checkbox" id="register-check">
-                    <label for="register-check">Ingatkan Saya</label>
+            <!------------------- registration form -------------------------->
+            <div class="register-container" id="register">
+                <div class="top">
+                    <span>Sudah Punya Akun? <a href="#" onclick="login()">Login</a></span>
+                    <header>Sign Up</header>
                 </div>
-                <div class="two">
-                    <label><a href="#">Terms & conditions</a></label>
+                <div class="two-forms">
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Nama">
+                        <i class="bx bx-user"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Email">
+                        <i class="bx bx-user"></i>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Password">
+                    <i class="bx bx-envelope"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" class="input-field" placeholder="Retaype Password">
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+                <div class="input-box">
+                    <input type="submit" class="submit" value="Register">
+                </div>
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" id="register-check">
+                        <label for="register-check">Ingat Saya</label>
+                    </div>
+                    <div class="two">
+                        <label><a href="#">Terms & conditions</a></label>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>   
+    <script>
 
+        function myMenuFunction() {
+            var i = document.getElementById("navMenu");
+            if (i.className === "nav-menu") {
+                i.className += " responsive";
+            } else {
+                i.className = "nav-menu";
+            }
+        }
 
-<script>
-
-    var a = document.getElementById("loginBtn");
-    var b = document.getElementById("registerBtn");
-    var x = document.getElementById("login");
-    var y = document.getElementById("register");
-
-    function login() {
-        x.style.left = "4px";
-        y.style.right = "-520px";
-        a.className += " white-btn";
-        b.className = "btn";
-        x.style.opacity = 1;
-        y.style.opacity = 0;
-    }
-
-    function register() {
-        x.style.left = "-510px";
-        y.style.right = "5px";
-        a.className = "btn";
-        b.className += " white-btn";
-        x.style.opacity = 0;
-        y.style.opacity = 1;
-    }
-
-</script>
-
+    </script>
+    <script>
+        var a = document.getElementById("loginBtn");
+        var b = document.getElementById("registerBtn");
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        function login() {
+            x.style.left = "4px";
+            y.style.right = "-520px";
+            a.className += " white-btn";
+            b.className = "btn";
+            x.style.opacity = 1;
+            y.style.opacity = 0;
+        }
+        function register() {
+            x.style.left = "-510px";
+            y.style.right = "5px";
+            a.className = "btn";
+            b.className += " white-btn";
+            x.style.opacity = 0;
+            y.style.opacity = 1;
+        }
+    </script>
 </body>
+
 </html>
