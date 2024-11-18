@@ -70,3 +70,15 @@ body {
     text-align: center;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
 }
+
+.menu-link {
+    text-decoration: none; /* Menghapus garis bawah */
+    color: inherit; /* Menggunakan warna teks elemen induk */
+}
+
+.menu-link:visited,
+.menu-link:hover,
+.menu-link:active {
+    color: inherit; /* Pastikan warna tetap sama */
+    text-decoration: none; /* Menghapus garis bawah pada semua state */
+}
