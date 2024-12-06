@@ -1,189 +1,51 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <style>
-        body {
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
-        }
-
-        .header {
-            background-color: #6b2b06;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            position: relative;
-        }
-
-        .header i {
-            position: absolute;
-            left: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
-        .header .time {
-            position: absolute;
-            left: 50px;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
-        .header .chat {
-            position: absolute;
-            right: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
-        .cart-container {
-            margin: 20px;
-        }
-
-        .cart-header {
-            background-color: #6b2b06;
-            color: white;
-            padding: 10px;
-            border-radius: 5px 5px 0 0;
-        }
-
-        .cart-item {
-            background-color: #8b3e0a;
-            color: white;
-            padding: 10px;
-            border-bottom: 1px solid #6b2b06;
-            display: flex;
-            align-items: center;
-        }
-
-        .cart-item img {
-            width: 50px;
-            height: 50px;
-            border-radius: 5px;
-            margin-right: 10px;
-        }
-
-        .cart-item .item-info {
-            flex-grow: 1;
-        }
-
-        .cart-item .item-quantity {
-            display: flex;
-            align-items: center;
-        }
-
-        .cart-item .item-quantity button {
-            background-color: #6b2b06;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            margin: 0 5px;
-            border-radius: 5px;
-        }
-
-        .cart-footer {
-            background-color: #6b2b06;
-            color: white;
-            padding: 10px;
-            border-radius: 0 0 5px 5px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .cart-footer .checkout-btn {
-            background-color: #ffcc00;
-            color: black;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Belanja</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style css/keranjang.css">
 </head>
-
 <body>
-    <div class="header">
-        <i class="fas fa-arrow-left">
-        </i>
-        <span class="time">
-            9:41
-        </span>
-        <h1>
-            Keranjang Saya
-        </h1>
-        <i class="fas fa-comment chat">
-        </i>
-    </div>
-    <div class="cart-container">
-        <div class="cart-header d-flex justify-content-between">
-            <span>
-                Produk
-            </span>
-            <span>
-                Harga
-            </span>
-            <span>
-                Kuantitas
-            </span>
-        </div>
-        <div class="cart-item">
-            <input checked="" type="checkbox" />
-            <img alt="Image of Nasi Campur Dewata" height="50"
-                src="https://storage.googleapis.com/a1aa/image/2j4VrfNebShRmUVC7wz1GTXJ3x5K1Ey4mimSJ5ss8oOWEqtTA.jpg"
-                width="50" />
-            <div class="item-info">
-                <strong>
-                    Nasi Campur Dewata
-                </strong>
-                Rp 30.000
+    <div class="container">
+        <header class="header">
+            <h1>Keranjang Belanja</h1>
+            <a href="#" class="btn-back">Kembali</a>
+        </header>
+        <section class="cart">
+            <p class="cart-message">Selamat datang di keranjang belanja Anda! Berikut adalah item yang telah Anda pilih:</p>
+            <div class="cart-item">
+                <img src="/image/menu-sample.jpg" alt="Menu Item" class="item-image">
+                <div class="item-details">
+                    <h2 class="item-title">Nama Menu 1</h2>
+                    <p class="item-description">Deskripsi singkat mengenai menu ini.</p>
+                    <p class="item-price">Harga: <span>Rp 25.000</span></p>
+                    <div class="item-quantity">
+                        <label for="quantity1">Jumlah:</label>
+                        <input type="number" id="quantity1" value="1" min="1">
+                    </div>
+                </div>
+                <button class="btn-remove">Hapus</button>
             </div>
-            <div class="item-quantity">
-                <button>
-                    -
-                </button>
-                <span>
-                    2
-                </span>
-                <button>
-                    +
-                </button>
+            <div class="cart-item">
+                <img src="/image/menu-sample2.jpg" alt="Menu Item" class="item-image">
+                <div class="item-details">
+                    <h2 class="item-title">Nama Menu 2</h2>
+                    <p class="item-description">Deskripsi singkat mengenai menu ini.</p>
+                    <p class="item-price">Harga: <span>Rp 30.000</span></p>
+                    <div class="item-quantity">
+                        <label for="quantity2">Jumlah:</label>
+                        <input type="number" id="quantity2" value="1" min="1">
+                    </div>
+                </div>
+                <button class="btn-remove">Hapus</button>
             </div>
-        </div>
-        <div class="cart-item">
-            <input checked="" type="checkbox" />
-            <img alt="Image of Renjana (Ice)" height="50"
-                src="https://storage.googleapis.com/a1aa/image/F4IMDX71uz6KPt0gDI7F3aFsbfIUenzqMFlBjV5QNqfwIUbnA.jpg"
-                width="50" />
-            <div class="item-info">
-                <strong>
-                    Renjana (Ice)
-                </strong>
-                Rp 25.000
+            <div class="cart-summary">
+                <h2>Total Harga: <span id="total-price">Rp 55.000</span></h2>
+                <button class="btn-checkout">Checkout</button>
             </div>
-            <div class="item-quantity">
-                <button>
-                    -
-                </button>
-                <span>
-                    1
-                </span>
-                <button>
-                    +
-                </button>
-            </div>
-        </div>
-        <div class="cart-footer">
-            <span>
-                Total (3 Produk) Rp 85.000
-            </span>
-            <button class="checkout-btn">
-                Checkout
-            </button>
-        </div>
+        </section>
     </div>
 </body>
-
 </html>

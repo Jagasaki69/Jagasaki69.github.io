@@ -1,0 +1,115 @@
+/* Global Styles */
+body {
+    background-color: #f0f0f0; /* Warna latar belakang */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header */
+.header {
+    background-color: #6A1B1A; /* Warna latar belakang header */
+    color: white; /* Warna teks header */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.btn-back {
+    text-decoration: none;
+    color: white; /* Warna teks tombol kembali */
+    padding: 10px 20px;
+    background-color: #BF392A; /* Warna latar belakang tombol kembali */
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+.btn-back:hover {
+    background-color: #FFD700; /* Warna saat hover */
+}
+
+/* Menu Detail Section */
+.menu-detail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: white; /* Warna latar belakang detail menu */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.image-box {
+    flex: 1;
+    max-width: 50%;
+    overflow: hidden;
+}
+
+.image-box img {
+    width: 500px; /* Ubah lebar gambar */
+    height: 400px; /* Ubah tinggi gambar */
+    object-fit: cover;
+    margin-left: 45px;
+}
+
+.info-box {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #6A1B1A; /* Warna teks informasi menu */
+}
+
+.menu-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.menu-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #6A1B1A; /* Warna deskripsi menu */
+}
+
+.menu-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #FFD700; /* Warna harga menu */
+}
+
+.btn-order {
+    padding: 10px 20px;
+    background-color: #FFD700; /* Warna tombol pesan */
+    color: #6A1B1A; /* Warna teks tombol */
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-order:hover {
+    background-color: #BF392A; /* Warna saat hover */
+    color: white; /* Warna teks saat hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-detail {
+        flex-direction: column;
+    }
+
+    .image-box,
+    .info-box {
+        max-width: 100%;
+    }
+}

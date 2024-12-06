@@ -1,0 +1,141 @@
+/* Global Styles */
+body {
+    background-color: #f0f0f0; /* Warna latar belakang */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header */
+.header {
+    background-color: #6A1B1A; /* Warna latar belakang header */
+    color: white; /* Warna teks header */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.btn-back {
+    text-decoration: none;
+    color: white; /* Warna teks tombol kembali */
+    padding: 10px 20px;
+    background-color: #BF392A; /* Warna latar belakang tombol kembali */
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+.btn-back:hover {
+    background-color: #FFD700; /* Warna saat hover */
+}
+
+/* Cart Section */
+.cart {
+    background-color: white; /* Warna latar belakang keranjang */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba (0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Cart Message */
+.cart-message {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Cart Item */
+.cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.item-image {
+    width: 100px; /* Ukuran gambar item */
+    height: auto;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.item-description {
+    font-size: 14px;
+    color: #666;
+}
+
+.item-price {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.item-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.item-quantity label {
+    margin-right: 10px;
+}
+
+.item-quantity input {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button Remove */
+.btn-remove {
+    background-color: #BF392A; /* Warna tombol hapus */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-remove:hover {
+    background-color: #FF5733; /* Warna saat hover */
+}
+
+/* Cart Summary */
+.cart-summary {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.cart-summary h2 {
+    font-size: 20px;
+    color: #333;
+}
+
+.btn-checkout {
+    background-color: #6A1B1A; /* Warna tombol checkout */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-checkout:hover {
+    background-color: #BF392A; /* Warna saat hover */
+}
