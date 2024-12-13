@@ -7,102 +7,7 @@
     <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <style>
-        body {
-            background-color: #f0f0f0;
-            font-family: 'Arial', sans-serif;
-        }
-
-        .header {
-            background-color: #6a1b1a;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            position: relative;
-        }
-
-        .header .back-button,
-        .header .cart-button {
-            position: absolute;
-            top: 20px;
-            font-size: 24px;
-        }
-
-        .header .back-button {
-            left: 20px;
-        }
-
-        .header .cart-button {
-            right: 20px;
-        }
-
-        .discount-banner {
-            background-color: #ffc107;
-            color: black;
-            text-align: center;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 10px;
-        }
-
-        .product-card {
-            background-color: white;
-            border-radius: 10px;
-            padding: 10px;
-            margin: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .product-card img {
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        .product-card .product-info {
-            text-align: center;
-            margin-top: 10px;
-        }
-
-        .product-card .product-info h5 {
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-        .product-card .product-info p {
-            color: #6a1b1a;
-            font-weight: bold;
-        }
-
-        .product-card .product-info .btn {
-            background-color: #6a1b1a;
-            color: white;
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        .product-card .product-info .btn i {
-            margin-left: 5px;
-        }
-
-        .footer {
-            background-color: #ffc107;
-            padding: 10px 0;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        .footer .nav-item {
-            display: inline-block;
-            margin: 0 15px;
-        }
-
-        .footer .nav-item i {
-            font-size: 24px;
-            color: black;
-        }
-    </style>
+    <link rel="stylesheet" href="/style css/resto.css" >
 </head>
 
 <body>
@@ -132,9 +37,9 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-6">
+            <div class="item">
                 <div class="product-card">
-                    <img alt="Tahu Cabe Garam" height="150"
+                    <img style="object-fit: cover;" alt="Tahu Cabe Garam" height="150"
                         src="https://storage.googleapis.com/a1aa/image/tEQc2sPvvOYRM9dAHR1Yu71uSA5Y369z7aKdxwS74QXEha7E.jpg"
                         width="150" />
                     <div class="product-info">
@@ -152,9 +57,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="item">
                 <div class="product-card">
-                    <img alt="Ice Mochaccino" height="150"
+                    <img style="object-fit: cover;" alt="Ice Mochaccino" height="150"
                         src="https://storage.googleapis.com/a1aa/image/EWPvHtfWa6xvSKKCPeZVAfuyoGF0EqvfloTLEEzqDwlARo2OB.jpg"
                         width="150" />
                     <div class="product-info">
@@ -172,11 +77,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="item">
                 <div class="product-card">
-                    <img alt="Renjana (Ice)" height="150"
-                        src="https://storage.googleapis.com/a1aa/image/2olIIqanldIlDBOLtD8GhWgUA75fzLJ6TL5ej5veZIgcIUbnA.jpg"
-                        width="150" />
+                    <img style="object-fit: cover;" alt="Renjana (Ice)" height="150"
+                         src="/image/makanan/makanan-14.jpg">
+                        
                     <div class="product-info">
                         <h5>
                             Renjana (Ice)
@@ -192,10 +97,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="item">
                 <div class="product-card">
-                    <img alt="Nasi Campur Dewata" height="150"
-                        src="https://storage.googleapis.com/a1aa/image/6hiuhuYfT0VpbaufOQJVVAv3ptiijQfCntaJ3O1emmsxQo2OB.jpg"
+                    <img style="object-fit: cover;" alt="Nasi Campur Dewata" height="150"
+                        src="/image/makanan/nasi campur bali.jpg"
                         width="150" />
                     <div class="product-info">
                         <h5>
@@ -212,10 +117,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="item">
                 <div class="product-card">
-                    <img alt="Beef Blackpepper" height="150"
-                        src="https://storage.googleapis.com/a1aa/image/lJzCKMwoSU5GJl6CNfoCYPV9YcaeuphywmysK0XbsGCJEqtTA.jpg"
+                    <img style="object-fit: cover;" alt="Beef Blackpepper" height="150"
+                        src="/image/makanan/Beef Blackpepper.jpg"
                         width="150" />
                     <div class="product-info">
                         <h5>
@@ -232,9 +137,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="item">
                 <div class="product-card">
-                    <img alt="Red Velvet" height="150"
+                    <img style="object-fit: cover;" alt="Red Velvet" height="150"
                         src="https://storage.googleapis.com/a1aa/image/uW70ZLezco1XKif3R0k5awYyCSc8f8ucWyNM9mFZe1XvQo2OB.jpg"
                         width="150" />
                     <div class="product-info">
