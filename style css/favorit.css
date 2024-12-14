@@ -5,23 +5,6 @@ body {
     padding: 0;
 }
 
-.back-button {
-    display: inline-block;
-    margin-right: 20px; /* Jarak antara tombol kembali dan elemen lainnya */
-}
-
-.back-button .btn {
-    background-color: #f8f9fa; /* Warna latar belakang tombol */
-    color: #d6b600; /* Warna teks tombol */
-    padding: 10px 15px; /* Padding tombol */
-    border-radius: 5px; /* Sudut tombol */
-    text-decoration: none; /* Menghilangkan garis bawah */
-}
-
-.back-button .btn:hover {
-    background-color: #e2e6ea; /* Warna latar belakang saat hover */
-}
-
 .header {
     background-color: #ffd700;
     padding: 20px;
@@ -59,13 +42,10 @@ body {
     font-weight: bold;
 }
 
-.details {
-    text-align: center; /* Pusatkan teks */
-}
 .food-item {
     display: flex;
-    flex-direction: column; /* Ubah menjadi kolom untuk tampilan kecil */
-    align-items: center; /* Pusatkan item */
+    flex-direction: column; /* Default to column for mobile */
+    align-items: center; /* Center items */
     background-color: white;
     padding: 10px;
     margin-bottom: 10px;
@@ -73,13 +53,13 @@ body {
 }
 
 .food-item img {
-    width: 100%; 
+    width: 100%;
     height: auto;
-    max-width: 100px;
+    max-width: 100px; /* Set max width for images */
 }
 
 .food-item .details {
-    flex-grow: 1;
+    text-align: center; /* Center text */
 }
 
 .food-item .details h3 {
@@ -110,25 +90,20 @@ body {
     color: red;
 }
 
-.footer {
-    flex-direction: column; /* Ubah menjadi kolom untuk tampilan kecil */
-}
-
-.footer .footer-item {
-    margin: 5px 0; /* Tambahkan jarak antar item footer */
-}
-
-/* Media Queries untuk tampilan lebih besar */
+/* Media Queries for larger screens */
 @media (min-width: 768px) {
     .food-item {
-        flex-direction: row; /* Kembali ke baris untuk tampilan besar */
+        flex-direction: row; /* Change to row for larger screens */
+        justify-content: space-between; /* Space items evenly */
+        align-items: center; /* Center items vertically */
     }
 
     .food-item img {
-        max-width: 100px; /* Ukuran gambar tetap */
+        max-width: 100px; /* Keep image size */
     }
 
-    .footer {
-        flex-direction: row; /* Kembali ke baris untuk footer */
+    .food-item .details {
+        flex-grow: 1; /* Allow details to take available space */
+        text-align: left; /* Align text to the left */
     }
 }
