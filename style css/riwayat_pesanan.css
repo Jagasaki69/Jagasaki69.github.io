@@ -1,0 +1,98 @@
+
+body {
+    background-color: #E0E0E0;
+    font-family: 'Arial', sans-serif;
+}
+
+.header {
+    background-color: #7B1E1E;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.header .back-icon {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.header .chat-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.tab-menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.tab-menu div {
+    margin: 0 20px;
+    font-weight: bold;
+    color: #7B1E1E;
+}
+
+.tab-menu .active {
+    border-bottom: 2px solid #7B1E1E;
+}
+
+.order-item {
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.order-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.order-details {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.order-details h5 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.order-details p {
+    margin: 0;
+    color: #6C757D;
+}
+
+.order-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order-actions .btn {
+    margin: 5px 0;
+}
+
+.footer {
+    background-color: #FFD700;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .nav-item {
+    text-align: center;
+}
+
+.footer .nav-item i {
+    display: block;
+}

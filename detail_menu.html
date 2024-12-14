@@ -1,31 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail Menu</title>
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <title>Ayam Geprek Bensu - Detail Menu</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome untuk icon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style css/detail_menu.css">
-</head>
-<body>
-    <div class="container">
-        <header class="header">
-            <h1>Detail Menu</h1>
-            <a href="#" class="btn-back">Kembali</a>
-        </header>
-        <section class="menu-detail">
-            <div class="image-box">
-                <img src="/image/makanan/makanan-7.jpg" alt="Menu Image" width="80px" height="70">
+
+
+
+    <body>
+        <!-- Tombol Kembali -->
+        <div class="container-fluid bg-white shadow-sm py-2 mb-3">
+            <div class="container">
+                <a href="#" class="text-dark">
+                    <i class="fas fa-arrow-left me-2"></i>Kembali
+                </a>
             </div>
-            <div class="info-box">
-                <h2 class="menu-title">Nama Menu</h2>
-                <p class="menu-description">
-                    Deskripsi singkat mengenai menu ini. Terbuat dari bahan berkualitas dan disajikan dengan rasa terbaik.
-                </p>
-                <p class="menu-price">Harga: <span>Rp 25.000</span></p>
-                <button class="btn-order">Pesan Sekarang</button>
+        </div>
+    
+        <!-- Gambar Menu -->
+        <div class="container mb-3">
+            <img src="image/agus.jpg" alt="Ayam Geprek Original" class="menu-image rounded">
+        </div>
+    
+        <!-- Informasi Menu -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="fw-bold">Ayam Geprek Original</h2>
+                    <p class="text-muted">Ayam crispy dengan sambal original yang lezat, disajikan dengan rasa autentik</p>
+                    
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="h4 text-primary mb-0 me-2">Rp 15.000</span>
+                        <span class="badge bg-success">Hemat 10%</span>
+                    </div>
+    
+                    <!-- Pilihan Level Pedas -->
+                    <div class="card mb-3">
+                        <div class="card-header bg-white">
+                            <h5 class="mb-0">Level Pedas</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="spicyLevel" id="original" checked>
+                                <label class="form-check-label" for="original">
+                                    Original
+                                </label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="spicyLevel" id="mild">
+                                <label class="form-check-label" for="mild">
+                                    Sedang
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="spicyLevel" id="extra">
+                                <label class="form-check-label" for="extra">
+                                    Extra Pedas (+Rp 2.000)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Tambahan -->
+                    <div class="card mb-3">
+                        <div class="card-header bg-white">
+                            <h5 class="mb-0">Tambahan</h5>
+                        </div>
+                        <div class="list-group list-group-flush">
+                            <div class="list-group-item d-flex justify-content-between align-items-center addon-item">
+                                <div>
+                                    <h6 class="my-0">Nasi Putih</h6>
+                                    <small class="text-muted">Tambahan nasi putih hangat</small>
+                                </div>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="nasiPutih">
+                                    <label class="form-check-label" for="nasiPutih">Rp 5.000</label>
+                                </div>
+                            </div>
+                            <div class="list-group-item d-flex justify-content-between align-items-center addon-item">
+                                <div>
+                                    <h6 class="my-0">Es Teh Manis</h6>
+                                    <small class="text-muted">Minuman pendamping</small>
+                                </div>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="esTeh">
+                                    <label class="form-check-label" for="esTeh">Rp 3.000</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Catatan Tambahan -->
+                    <div class="card mb-3">
+                        <div class="card-header bg-white">
+                            <h5 class="mb-0">Catatan</h5>
+                        </div>
+                        <div class="card-body">
+                            <textarea class="form-control" rows="3" placeholder="Tulis catatan tambahan (opsional)"></textarea>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-    </div>
+        </div>
+    
+        <!-- Footer Keranjang -->
+        <div class="fixed-bottom bg-white p-3 border-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 d-flex align-items-center">
+                        <div class="input-group">
+                            <button class="btn btn-outline-secondary" type="button" id="minus">-</button>
+                            <input type="text" class="form-control text-center" value="1" id="quantity">
+                            <button class="btn btn-outline-secondary" type="button" id="plus">+</button>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <button class="btn btn-primary w-100">
+                            Tambah ke Keranjang - Rp 15.000
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Bootstrap JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const minusBtn = document.getElementById('minus');
+                const plusBtn = document.getElementById('plus');
+                const quantityInput = document.getElementById('quantity');
+    
+                minusBtn.addEventListener('click', function() {
+                    let currentValue = parseInt(quantityInput.value);
+                    if (currentValue > 1) {
+                        quantityInput.value = currentValue - 1;
+                    }
+                });
+    
+                plusBtn.addEventListener('click', function() {
+                    let currentValue = parseInt(quantityInput.value);
+                    quantityInput.value = currentValue + 1;
+                });
+            });
+        </script>
+    </body>
+    </html>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>

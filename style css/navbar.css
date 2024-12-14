@@ -39,3 +39,34 @@ body {
     font-family: 'Inter', sans-serif;
     color: #FFFFFF;
 }
+
+
+.cart-icon {
+    font-size: 1.5rem;
+    color: #6a1b0c;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.cart-icon:hover {
+    transform: scale(1.1);
+    color: #8e2d16;
+}
+
+.btn-maroon {
+    background-color: #6a1b0c;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-maroon:hover {
+    background-color: #8e2d16;
+    transform: scale(1.05);
+}

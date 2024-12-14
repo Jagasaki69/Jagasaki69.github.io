@@ -1,6 +1,8 @@
 body {
     background-color: #ffffff;
     font-family: Arial, sans-serif;
+
+    /* background: linear-gradient(rgba(138, 54, 15, 0.85), transparent); */
 }
 
 .header {
