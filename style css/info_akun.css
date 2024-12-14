@@ -2,37 +2,40 @@
 body {
     background-color: #f4f4f4;
 }
-.order-header {
+.profile-header {
     background-color: #8e2d16;
     color: white;
-    padding: 20px 0;
+    padding: 30px 0;
     text-align: center;
 }
-.order-card {
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+}
+.profile-info-card {
     background-color: white;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: -30px;
     padding: 20px;
+    position: relative;
+    z-index: 10;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
-.order-item {
+.profile-info-item {
     border-bottom: 1px solid #f1f1f1;
     padding: 15px 0;
 }
-.order-item:last-child {
+.profile-info-item:last-child {
     border-bottom: none;
 }
-.status-badge {
-    background-color: #8e2d16;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-.btn-track {
+.edit-profile-btn {
     background-color: #8e2d16;
     color: white;
 }
-.btn-track:hover {
+.edit-profile-btn:hover {
     background-color: #6e1e0f;
     color: white;
 }

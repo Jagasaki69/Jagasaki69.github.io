@@ -1,207 +1,212 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="id">
 <head>
-    <title>
-        Selasar
-    </title>
-    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/style css/resto.css" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayam Geprek Bensu - Detail Menu</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome untuk icon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style css/resto.css">
+    <link rel="stylesheet" href="style css/navbar.css">
+
+
+
 </head>
-
 <body>
-    <div class="header">
-        <i class="fas fa-arrow-left back-button">
-        </i>
-        <h1>
-            Selasar
-        </h1>
-        <p>
-            Jl. Sudiono No.1, Sekarkurung, Muktiharjo
-        </p>
-        <p>
-            <i class="fas fa-star">
-            </i>
-            4.6
-        </p>
-        <i class="fas fa-shopping-cart cart-button">
-        </i>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <span class="speed-text">Speed</span>
+                <span class="dish-text">Dish</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="favorit.html">Favorit</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pesanan_diproses.html">Pesanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="notifikasi_pesan.html">Notifikasi</a></li>
+                    <li class="nav-item d-flex align-items-center">
+                        <a class="nav-link" href="akun.html">Akun</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <a class="nav-link" href="keranjang.html">Keranjang</a>
+                        <i class="fas fa-shopping-cart cart-icon"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Header Restoran -->
+    <div class="restaurant-header">
+        <!-- <img src="image/cireng ayam mozarela.jpg"> -->
+        <div class="restaurant-logo"></div>
     </div>
-    <div class="discount-banner">
-        <i class="fas fa-ticket-alt">
-        </i>
-        Discount 40%
-        <br />
-        15 Sept 2024 - 29 Okt 2024
-    </div>
-    <div class="container">
+
+    <!-- Informasi Restoran -->
+    <div class="container mt-5">
         <div class="row">
-            <div class="item">
-                <div class="product-card">
-                    <img style="object-fit: cover;" alt="Tahu Cabe Garam" height="150"
-                        src="https://storage.googleapis.com/a1aa/image/tEQc2sPvvOYRM9dAHR1Yu71uSA5Y369z7aKdxwS74QXEha7E.jpg"
-                        width="150" />
-                    <div class="product-info">
-                        <h5>
-                            Tahu Cabe Garam
-                        </h5>
-                        <p>
-                            Rp. 22.000,-
-                        </p>
-                        <button class="btn">
-                            <i class="fas fa-shopping-cart">
-                            </i>
-                            Masukkan Keranjang
-                        </button>
+            <div class="col-12">
+                <h2 class="fw-bold">Geprek Bensu</h2>
+                <div class="d-flex align-items-center text-muted">
+                    <i class="fas fa-star text-warning me-2"></i>
+                    <span>4.5</span>
+                    <span class="mx-2">•</span>
+                    <span>Ayam Geprek</span>
+                    <span class="mx-2">•</span>
+                    <span>1.2 km</span>
+                </div>
+                <p class="text-muted mt-2">Ayam geprek berkualitas dengan sambal pilihan</p>
+            </div>
+        </div>
+
+        <!-- Promo dan Diskon -->
+        <div class="row mt-3">
+            <div class="col-12">
+                <div class="alert alert-warning" role="alert">
+                    <i class="fas fa-tag me-2"></i>
+                    Diskon 10% untuk pemesanan pertama
+                </div>
+            </div>
+        </div>
+
+        <!-- Kategori Menu -->
+        <div class="row mt-3">
+            <div class="col-12">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active tab-makanan" id="pills-ayam-tab" data-bs-toggle="pill" data-bs-target="#pills-ayam">Makanan</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-minuman-tab" data-bs-toggle="pill" data-bs-target="#pills-minuman">Minuman</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-tambahan-tab" data-bs-toggle="pill" data-bs-target="#pills-tambahan">Tambahan</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Konten Menu -->
+        <div class="tab-content" id="pills-tabContent">
+
+            <!-- Tab Ayam Geprek -->
+            <div class="tab-pane fade show active" id="pills-ayam" role="tabpanel">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 mb-3"> 
+                        <a href="detail_menu.html" class="text-decoration-none text-dark">
+                        <div class="card menu-item-card">
+                            <!-- <img src="image/Beef Blackpepper.png" class="card-img-top" alt="Ayam Geprek Original"> -->
+                            <div class="card-body">
+                                <h5 class="card-title">Ayam Geprek Original</h5>
+                                <p class="card-text text-muted">Ayam crispy dengan sambal original</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">Rp 15.000</span>
+                                    <button class="btn btn-primary btn-sm">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+                    
+
+                    <div class="col-12 col-md-6 col-lg-4 mb-3">
+                        <a href="detail_menu.html" class="text-decoration-none text-dark">
+                            <div class="card menu-item-card">
+                                <!-- <img src="image/Beef Blackpepper.png" class="card-img-top" alt="Ayam Geprek Pedas"> -->
+                                <div class="card-body">
+                                    <h5 class="card-title">Ayam Geprek Pedas</h5>
+                                    <p class="card-text text-muted">Ayam crispy dengan sambal extra pedas</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="h5 mb-0">Rp 16.000</span>
+                                        <button class="btn btn-primary btn-sm">
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Tab Minuman -->
+            <div class="tab-pane fade" id="pills-minuman" role="tabpanel">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="card menu-item-card">
+                            <img src="image/Beef Blackpepper.png" class="card-img-top" alt="Es Teh Manis">
+                            <div class="card-body">
+                                <h5 class="card-title">Es Teh Manis</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">Rp 3.000</span>
+                                    <button class="btn btn-primary btn-sm">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="product-card">
-                    <img style="object-fit: cover;" alt="Ice Mochaccino" height="150"
-                        src="https://storage.googleapis.com/a1aa/image/EWPvHtfWa6xvSKKCPeZVAfuyoGF0EqvfloTLEEzqDwlARo2OB.jpg"
-                        width="150" />
-                    <div class="product-info">
-                        <h5>
-                            Ice Mochaccino
-                        </h5>
-                        <p>
-                            Rp. 26.000,-
-                        </p>
-                        <button class="btn">
-                            <i class="fas fa-shopping-cart">
-                            </i>
-                            Masukkan Keranjang
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="product-card">
-                    <img style="object-fit: cover;" alt="Renjana (Ice)" height="150"
-                         src="/image/makanan/makanan-14.jpg">
-                        
-                    <div class="product-info">
-                        <h5>
-                            Renjana (Ice)
-                        </h5>
-                        <p>
-                            Rp. 25.000,-
-                        </p>
-                        <button class="btn">
-                            <i class="fas fa-shopping-cart">
-                            </i>
-                            Masukkan Keranjang
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="product-card">
-                    <img style="object-fit: cover;" alt="Nasi Campur Dewata" height="150"
-                        src="/image/makanan/nasi campur bali.jpg"
-                        width="150" />
-                    <div class="product-info">
-                        <h5>
-                            Nasi Campur Dewata
-                        </h5>
-                        <p>
-                            Rp. 30.000,-
-                        </p>
-                        <button class="btn">
-                            <i class="fas fa-shopping-cart">
-                            </i>
-                            Masukkan Keranjang
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="product-card">
-                    <img style="object-fit: cover;" alt="Beef Blackpepper" height="150"
-                        src="/image/makanan/Beef Blackpepper.jpg"
-                        width="150" />
-                    <div class="product-info">
-                        <h5>
-                            Beef Blackpepper
-                        </h5>
-                        <p>
-                            Rp. 30.000,-
-                        </p>
-                        <button class="btn">
-                            <i class="fas fa-shopping-cart">
-                            </i>
-                            Masukkan Keranjang
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="product-card">
-                    <img style="object-fit: cover;" alt="Red Velvet" height="150"
-                        src="https://storage.googleapis.com/a1aa/image/uW70ZLezco1XKif3R0k5awYyCSc8f8ucWyNM9mFZe1XvQo2OB.jpg"
-                        width="150" />
-                    <div class="product-info">
-                        <h5>
-                            Red Velvet
-                        </h5>
-                        <p>
-                            Rp. 23.000,-
-                        </p>
-                        <button class="btn">
-                            <i class="fas fa-shopping-cart">
-                            </i>
-                            Masukkan Keranjang
-                        </button>
+
+            <!-- Tab Tambahan -->
+            <div class="tab-pane fade" id="pills-tambahan" role="tabpanel">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="card menu-item-card">
+                            <img src="image/Beef Blackpepper.png" class="card-img-top" alt="Nasi Putih">
+                            <div class="card-body">
+                                <h5 class="card-title">Nasi Putih</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">Rp 5.000</span>
+                                    <button class="btn btn-primary btn-sm">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="footer">
-        <div class="nav-item">
-            <i class="fas fa-home">
-            </i>
-            <p>
-                Beranda
-            </p>
-        </div>
-        <div class="nav-item">
-            <i class="fas fa-heart">
-            </i>
-            <p>
-                Favorit
-            </p>
-        </div>
-        <div class="nav-item">
-            <i class="fas fa-clipboard-list">
-            </i>
-            <p>
-                Pesanan
-            </p>
-        </div>
-        <div class="nav-item">
-            <i class="fas fa-bell">
-            </i>
-            <p>
-                Notifikasi
-            </p>
-        </div>
-        <div class="nav-item">
-            <i class="fas fa-user">
-            </i>
-            <p>
-                Akun
-            </p>
+
+    <!-- Keranjang -->
+    <div class="fixed-bottom bg-white p-3 border-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6">
+                    <span class="fw-bold">Total Pesanan</span>
+                    <p class="h4 mb-0">Rp 0</p>
+                </div>
+                <div class="col-6 text-end">
+                    <button class="btn w-100 custom-cart-button">
+                        Tambah ke Keranjang
+                    </button>
+                </div>
+                
+            </div>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js">
+    </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-
-    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
+    </script>
 </body>
-
 </html>

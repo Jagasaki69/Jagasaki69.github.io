@@ -16,6 +16,7 @@
 
 <body>
     
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
@@ -29,164 +30,115 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="favorit.html">Favorit</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pesan.html">Pesanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pesanan_diproses.html">Pesanan</a></li>
                     <li class="nav-item"><a class="nav-link" href="notifikasi_pesan.html">Notifikasi</a></li>
                     <li class="nav-item d-flex align-items-center">
-                        <a class="nav-link" href="#">Account</a>
+                        <a class="nav-link" href="akun.html">Akun</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <a class="nav-link" href="keranjang.html">Keranjang</a>
                         <i class="fas fa-shopping-cart cart-icon"></i>
                     </li>
                 </ul>
             </div>
         </div>
-
     </nav>
+        <!-- Header -->
+        <div class="container-fluid bg-white shadow-sm py-3 mb-3">
+            <div class="container d-flex align-items-center">
+                <a href="#" class="text-dark me">
+                </a>
+                <h5 class="mb-0">Favorit Saya</h5>
+            </div>
+        </div>
     
-    <div class="header">
-        <div class="time">
-            9:41
-        </div>
-        <div class="location">
-            Hai, Anastasya
-            <br />
-            <span class="location">
-                Sidorekso
-            </span>
-        </div>
+        <!-- Konten Favorit -->
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="detail_menu.html">
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <div class="card favorite-item">
+                        <img src="/api/placeholder/400/150" class="card-img-top favorite-item-image" alt="Ayam Geprek Original">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <h5 class="card-title mb-1">Ayam Geprek Original</h5>
+                                    <p class="text-muted small mb-2">Geprek Bensu</p>
+                                    <p class="text-custom-price fw-bold mb-2">Rp 15.000</p>
+                                </div>
+                                <button class="btn btn-sm btn-favorite">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        
+                            <button class="btn btn-outline-primary w-100 mt-2">
+                                Tambah ke Keranjang
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
-        <a href="keranjang.html" class="text-decoration-none text-dark">
-        <div class="cart">
-            <i class="fas fa-shopping-cart">
-            </i>
-        </div>
-    </div>
-    <div class="content">
-        <h2>
-            Favorit
-        </h2>
-
-        <a href="detail_menu.html" class="text-decoration-none text-dark">
-        <div class="food-item">
-            <img alt="Image of Dimsum Mentai" height="100"
-                src="https://storage.googleapis.com/a1aa/image/yYIPIvebbv0fs0OthGXPMeOgnE9fqfKBlN62imJ5npExcLtdC.jpg"
-                width="100" />
-            <div class="details">
-                <h3>
-                    Dimsum Mentai
-                </h3>
-                <p>
-                    Makanan | Socha
-                </p>
-                <p class="rating">
-                    <i class="fas fa-star">
-                    </i>
-                    4.9 (156) | 0.5km | 10min
-                </p>
-                <span class="discount">
-                    Diskon 101%
-                </span>
-                <span class="discount">
-                    Diskon Ongkir
-                </span>
+    
+                <div class="col-12 mb-3">
+                    <div class="card favorite-item">
+                        <img src="/api/placeholder/400/150" class="card-img-top favorite-item-image" alt="Ayam Geprek Pedas">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <h5 class="card-title mb-1">Ayam Geprek Pedas</h5>
+                                    <p class="text-muted small mb-2">Geprek Bensu</p>
+                                    <p class="text-custom-price fw-bold mb-2">Rp 16.000</p>
+                                </div>
+                                <button class="btn btn-sm btn-favorite">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                            <button class="btn btn-outline-primary w-100 mt-2">
+                                Tambah ke Keranjang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 mb-3">
+                    <div class="card favorite-item">
+                        <img src="/api/placeholder/400/150" class="card-img-top favorite-item-image" alt="Es Teh Manis">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <h5 class="card-title mb-1">Es Teh Manis</h5>
+                                    <p class="text-muted small mb-2">Geprek Bensu</p>
+                                    <p class="text-custom-price fw-bold mb-2">Rp 3.000</p>
+                                </div>
+                                <button class="btn btn-sm btn-favorite">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                            <button class="btn btn-outline-primary w-100 mt-2">
+                                Tambah ke Keranjang
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="favorite">
-                <i class="fas fa-heart">
-                </i>
-            </div>
-        </div>
-
-        <a href="detail_menu.html" class="text-decoration-none text-dark">
-        <div class="food-item">
-            <img alt="Image of Bubur Ayam H. Syukur" height="100"
-                src="https://storage.googleapis.com/a1aa/image/ng1W0QeOrKWKMKcwUKP3wjGnC0zEpc6Hmrb9hzDLwoh0t02JA.jpg"
-                width="100" />
-            <div class="details">
-                <h3>
-                    Bubur Ayam H. Syukur
-                </h3>
-                <p>
-                    Bubur | Warung H.Syukur
-                </p>
-                <p class="rating">
-                    <i class="fas fa-star">
-                    </i>
-                    1.2 (1000) | 1km | 20min
-                </p>
-                <span class="discount">
-                    Diskon 100%
-                </span>
-                <span class="discount">
-                    Diskon Ongkir
-                </span>
-            </div>
-            <div class="favorite">
-                <i class="fas fa-heart">
-                </i>
+    
+            <!-- Pesan Kosong -->
+            <div class="row d-none" id="emptyFavorites">
+                <div class="col-12 text-center py-5">
+                    <i class="fas fa-heart-broken text-muted mb-3" style="font-size: 5rem;"></i>
+                    <h4>Belum Ada Favorit</h4>
+                    <p class="text-muted">Anda belum menambahkan item favorit apapun</p>
+                    <a href="#" class="btn btn-primary">Mulai Belanja</a>
+                </div>
             </div>
         </div>
 
-        <a href="detail_menu.html" class="text-decoration-none text-dark">
-        <div class="food-item">
-            <img alt="Image of Salad Buah" height="100"
-                src="https://storage.googleapis.com/a1aa/image/bxLCcqRc5XI1NNIeCQdfCqlEVn9TpbUfAfc5x86qqeGFcLtdC.jpg"
-                width="100" />
-            <div class="details">
-                <h3>
-                    Salad Buah
-                </h3>
-                <p>
-                    Salad | King Stone
-                </p>
-                <p class="rating">
-                    <i class="fas fa-star">
-                    </i>
-                    1.2 (523) | 10km | 30min
-                </p>
-                <span class="discount">
-                    Diskon 100%
-                </span>
-                <span class="discount">
-                    Diskon Ongkir
-                </span>
-            </div>
-            <div class="favorite">
-                <i class="fas fa-heart">
-                </i>
-            </div>
-        </div>
 
-        <a href="detail_menu.html" class="text-decoration-none text-dark">
-        <div class="food-item">
-            <img alt="Image of Chinese Food 38" height="100"
-                src="https://storage.googleapis.com/a1aa/image/Mqlvv4vlZ8qBJxhn39R5KFBt7WfkFDXfRndntxoTBxfJ3SbnA.jpg"
-                width="100" />
-            <div class="details">
-                <h3>
-                    Chinese Food 38
-                </h3>
-                <p>
-                    Makanan | Socha
-                </p>
-                <p class="rating">
-                    <i class="fas fa-star">
-                    </i>
-                    4.9 (156) | 0.5km | 10min
-                </p>
-                <span class="discount">
-                    Diskon 101%
-                </span>
-                <span class="discount">
-                    Diskon Ongkir
-                </span>
-            </div>
-            <div class="favorite">
-                <i class="fas fa-heart">
-                </i>
-            </div>
-        </div>
-    </div>
     <footer class="footer text-center">
         <p>&copy; 2024 Food App | <a href="#">Privacy Policy</a></p>
     </footer>
+    
+        <!-- Bootstrap JS -->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>

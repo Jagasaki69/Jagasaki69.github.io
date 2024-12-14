@@ -1,90 +1,123 @@
-<html>
+<!DOCTYPE html>
+<html lang="id">
 <head>
-    <title>Edit Profil</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        body {
-            background-color: #D3D3D3;
-            font-family: Arial, sans-serif;
-        }
-        .header {
-            background-color: #7B3F00;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            position: relative;
-        }
-        .header i {
-            position: absolute;
-            left: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 24px;
-        }
-        .profile-pic {
-            width: 100px;
-            height: 100px;
-            background-color: #FFCCCB;
-            border-radius: 50%;
-            position: relative;
-            margin: 20px auto;
-        }
-        .profile-pic i {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            background-color: #FFA500;
-            border-radius: 50%;
-            padding: 5px;
-            color: white;
-        }
-        .form-group {
-            margin: 20px;
-        }
-        .form-control {
-            background-color: #E0E0E0;
-            border: none;
-            border-radius: 10px;
-            padding: 10px;
-        }
-        .btn-save {
-            background-color: #FFD700;
-            color: black;
-            border: none;
-            border-radius: 10px;
-            padding: 10px;
-            width: 100%;
-            margin: 20px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Saya - Geprek Bensu</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome untuk icon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style css/info_akun.css">
+    <link rel="stylesheet" href="style css/navbar.css">
+
+
 </head>
 <body>
-    <div class="header">
-        <i class="fas fa-arrow-left"></i>
-        <h1>Edit Profil</h1>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <span class="speed-text">Speed</span>
+                    <span class="dish-text">Dish</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="favorit.html">Favorit</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pesanan_diproses.html">Pesanan</a></li>
+                        <li class="nav-item"><a class="nav-link" href="notifikasi_pesan.html">Notifikasi</a></li>
+                        <li class="nav-item d-flex align-items-center">
+                            <a class="nav-link" href="akun.html">Akun</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <a class="nav-link" href="keranjang.html">Keranjang</a>
+                            <i class="fas fa-shopping-cart cart-icon"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <!-- Header Profil -->
+    <div class="profile-header">
+        <div class="container">
+            <img src="image/profile.JPG" alt="Foto Profil" class="profile-image mb-3">
+            <h4>Anastasya Rosalin</h4>
+        </div>
     </div>
-    <div class="profile-pic">
-        <i class="fas fa-pencil-alt"></i>
-    </div>
+
+    <!-- Informasi Profil -->
     <div class="container">
-        <div class="form-group">
-            <label for="fullName" class="form-label">NAMA LENGKAP</label>
-            <input type="text" class="form-control" id="fullName" value="Anastasya Rosalin">
+        <div class="profile-info-card">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h5 class="mb-0">Informasi Akun</h5>
+                <a class="nav-link" href="akun.html">
+                    <button class="btn btn-sm edit-profile-btn">
+                        <i class="fas fa-edit me-2"></i>Simpan
+                    </button>
+                </a>
+            </div>
+    
+            <div class="profile-info-item d-flex justify-content-between align-items-center">
+                <div>
+                    <small class="text-muted d-block">Nama</small>
+                    <input type="text" class="form-control" value="Anastasya Rosalin">
+                </div>
+            </div>
+    
+            <div class="profile-info-item d-flex justify-content-between align-items-center">
+                <div>
+                    <small class="text-muted d-block">Email</small>
+                    <input type="text" class="form-control" value="anastasya@gmail.com">
+                </div>
+            </div>
+    
+            <div class="profile-info-item d-flex justify-content-between align-items-center">
+                <div>
+                    <small class="text-muted d-block">No. Telepon</small>
+                    <input type="text" class="form-control" value="+62 8566946659">
+                </div>
+            </div>
+    
+            <div class="profile-info-item d-flex justify-content-between align-items-center">
+                <div>
+                    <small class="text-muted d-block">Alamat</small>
+                    <input type="text" class="form-control" value="Ds. Sidorekso">
+                </div>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="email" class="form-label">EMAIL</label>
-            <input type="email" class="form-control" id="email" value="anastasya@gmail.com">
-        </div>
-        <div class="form-group">
-            <label for="phone" class="form-label">NO. TELEPON</label>
-            <input type="text" class="form-control" id="phone" value="+62 8566946659">
-        </div>
-        <div class="form-group">
-            <label for="bio" class="form-label">BIO</label>
-            <input type="text" class="form-control" id="bio" value="I love fast food">
-        </div>
-        <button class="btn-save">SIMPAN</button>
     </div>
+    
+    <!-- Menu Tambahan -->
+    <div class="container mt-3">
+        <div class="card">
+            <div class="list-group list-group-flush">
+                <a href="riwayat_pesanan.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                    Riwayat Pesanan
+                    <i class="fas fa-chevron-right text-muted"></i>
+                </a>
+                <a href="metode_bayar.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                    Metode Pembayaran
+                    <i class="fas fa-chevron-right text-muted"></i>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                    Pengaturan
+                    <i class="fas fa-chevron-right text-muted"></i>
+                </a>
+                <a href="login-register.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center text-danger">
+                    Keluar
+                    <i class="fas fa-sign-out-alt text-danger"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

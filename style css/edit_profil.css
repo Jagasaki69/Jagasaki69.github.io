@@ -1,0 +1,54 @@
+
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+.header {
+    background-color: #7B3F00;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+.header i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+}
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    background-color: #FFCCCB;
+    border-radius: 50%;
+    position: relative;
+    margin: 20px auto;
+}
+.profile-pic i {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #FFA500;
+    border-radius: 50%;
+    padding: 5px;
+    color: white;
+}
+.form-group {
+    margin: 20px;
+}
+.form-control {
+    background-color: #E0E0E0;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+.btn-save {
+    background-color: #FFD700;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    margin: 20px;
+}

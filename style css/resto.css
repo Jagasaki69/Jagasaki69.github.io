@@ -1,123 +1,73 @@
+
 body {
-    background-color: #f0f0f0;
-    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
 }
-
-.header {
-    background-color: #6a1b1a;
-    color: white;
-    padding: 50px;
-    text-align: center;
+.restaurant-header {
     position: relative;
+    height: 250px;
+    background-image: url('/api/placeholder/800/250');
+    background-size: cover;
+    background-position: center;
 }
-
-.header .back-button,
-.header .cart-button {
+.restaurant-logo {
     position: absolute;
-    top: 20px;
-    font-size: 24px;
-}
-
-.header .back-button {
+    bottom: -40px;
     left: 20px;
-}
-
-.header .cart-button {
-    right: 20px;
-}
-
-.discount-banner {
-    background-color: #ffc107;
-    color: black;
-    text-align: center;
-    padding: 10px;
-    margin: 10px 0;
+    width: 80px;
+    height: 80px;
     border-radius: 10px;
+    border: 3px solid white;
+    background-image: url('/api/placeholder/80/80');
+    background-size: cover;
 }
-
-.product-card {
-    background-color: white;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.menu-item-card {
+    transition: transform 0.3s;
 }
-
-.product-card img {
-    width: 100%;
-    border-radius: 10px;
+.menu-item-card:hover {
+    transform: scale(1.02);
 }
-
-.product-card .product-info {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.product-card .product-info h5 {
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.product-card .product-info p {
-    color: #6a1b1a;
-    font-weight: bold;
-}
-
-.product-card .product-info .btn {
-    background-color: #6a1b1a;
+.badge-custom {
+    background-color: #ff6b6b;
     color: white;
-    width: 100%;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
 }
 
-.product-card .product-info .btn i {
-    margin-left: 5px;
+.btn-sm {
+    color: #6e1e0f;
 }
 
-.footer {
-    background-color: #ffc107;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1px ;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    gap: 10px;
+.btn-primary {
+    color: #ccc6c5;
 }
 
-.footer .nav-item {
-    display: inline-block;
-    padding-top: 25px;
-    display: flex;
-    flex-direction: column ;
-    justify-content: center;
-    align-items: center;
-    height: fit-content;
+.custom-cart-button {
+    background-color: #8e2d16; /* Warna tombol */
+    color: white; /* Warna teks */
+    border: none; /* Hapus border */
+    border-radius: 5px; /* Sudut sedikit membulat */
+    padding: 10px 15px; /* Ruang dalam tombol */
+    transition: background-color 0.3s ease; /* Efek transisi */
 }
 
-.footer .nav-item i {
-    font-size: 25px;
-    color: black;
-}
-.container {
-    display: flex;
+.custom-cart-button:hover {
+    background-color: white; /* Warna saat hover */
+    border-color: #6e1e0f;
+    cursor: pointer; /* Mengubah kursor menjadi pointer */
 }
 
-.row{
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 6rem;
-    justify-content: center;
-    align-items: center;
+.nav-pills .nav-link {
+    background-color: #ccc6c5; /* Warna dasar */
+    border-color: #6e1e0f;
+    color: rgb(0, 0, 0); /* Warna teks */
+    transition: background-color 0.3s ease; /* Animasi saat hover */
+    margin-right: 5px;
 }
 
-.item {
-    max-width: 400px;
-    width: 100%;
+.nav-pills .nav-link:hover {
+    background-color: #6e1e0f; /* Warna saat hover */
+    color: white; /* Warna teks tetap putih saat hover */
+}
+
+.nav-pills .nav-link.active {
+    background-color: #8e2d16; /* Warna untuk tab aktif */
+    color: white; /* Warna teks untuk tab aktif */
 }
