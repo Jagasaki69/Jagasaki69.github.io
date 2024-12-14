@@ -44,9 +44,9 @@ body {
 
 .food-container {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap */
-    gap: 20px; /* Space between cards */
-    justify-content: center; /* Center items */
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center; 
 }
 
 .food-card {
@@ -54,12 +54,12 @@ body {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: calc(33.333% - 20px); /* Default to 3 cards per row */
+    width: calc(33.333% - 20px);
     transition: transform 0.2s;
 }
 
 .food-card:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    transform: scale(1.05); 
 }
 
 .food-card img {
@@ -77,49 +77,49 @@ body {
     font-weight: bold;
 }
 
-/* Media Queries for Responsiveness */
+
 @media (max-width: 768px) {
     .food-card {
-        width: calc(50% - 20px); /* 2 cards per row */
+        width: calc(50% - 20px); 
     }
 }
 
 @media (max-width: 480px) {
     .food-card {
-        width: calc(100% - 20px); /* 1 card per row */
+        width: calc(100% - 20px);
     }
     
 }
 
 .footer {
-    background-color: #ffd700; /* Warna latar belakang footer */
-    padding: 10px 0; /* Padding atas dan bawah */
-    display: flex; /* Menggunakan flexbox untuk tata letak */
-    justify-content: space-around; /* Menyebar item secara merata */
-    position: fixed; /* Memperbaiki posisi footer di bagian bawah */
- bottom: 0; /* Menempatkan footer di bagian bawah */
-    width: 100%; /* Mengatur lebar footer 100% */
+    background-color: #ffd700; 
+    padding: 10px 0;
+    display: flex; 
+    justify-content: space-around; 
+    position: fixed; 
+ bottom: 0; 
+    width: 100%;
 }
 
 .footer-item {
-    text-align: center; /* Menyelaraskan teks di tengah */
+    text-align: center;
 }
 
 .footer-item i {
-    font-size: 24px; /* Ukuran ikon */
-    color: black; /* Warna ikon */
+    font-size: 24px; 
+    color: black;
 }
 
 .footer-item p {
-    margin: 0; /* Menghapus margin */
-    font-size: 12px; /* Ukuran font untuk teks */
-    color: black; /* Warna teks */
+    margin: 0; 
+    font-size: 12px;
+    color: black; 
 }
 
-/* Media Queries untuk Responsivitas */
+
 @media (max-width: 768px) {
     .footer-item {
-        flex: 1; /* Membuat setiap item footer memiliki lebar yang sama */
+        flex: 1;
     }
 }
 

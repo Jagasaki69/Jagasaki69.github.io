@@ -1,13 +1,13 @@
 /* Global Styles */
 body {
-    background-color: #f0f0f0; /* Warna latar belakang */
+    background-color: #f0f0f0;
     font-family: 'Arial', sans-serif;
 }
 
 /* Header */
 .header {
-    background-color: #6A1B1A; /* Warna latar belakang header */
-    color: white; /* Warna teks header */
+    background-color: #6A1B1A; 
+    color: white; 
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -21,23 +21,23 @@ body {
 
 .btn-back {
     text-decoration: none;
-    color: white; /* Warna teks tombol kembali */
+    color: white;
     padding: 10px 20px;
-    background-color: #BF392A; /* Warna latar belakang tombol kembali */
+    background-color: #BF392A; 
     border-radius: 30px;
     transition: background-color 0.3s;
 }
 
 .btn-back:hover {
-    background-color: #FFD700; /* Warna saat hover */
+    background-color: #FFD700; 
 }
 
-/* Menu Detail Section */
+
 .menu-detail {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    background-color: white; /* Warna latar belakang detail menu */
+    background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -51,8 +51,8 @@ body {
 }
 
 .image-box img {
-    width: 500px; /* Ubah lebar gambar */
-    height: 400px; /* Ubah tinggi gambar */
+    width: 500px;
+    height: 400px; 
     object-fit: cover;
     margin-left: 45px;
 }
@@ -64,7 +64,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #6A1B1A; /* Warna teks informasi menu */
+    color: #6A1B1A;
 }
 
 .menu-title {
@@ -76,20 +76,20 @@ body {
 .menu-description {
     font-size: 16px;
     margin-bottom: 20px;
-    color: #6A1B1A; /* Warna deskripsi menu */
+    color: #6A1B1A; 
 }
 
 .menu-price {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #FFD700; /* Warna harga menu */
+    color: #FFD700; 
 }
 
 .btn-order {
     padding: 10px 20px;
-    background-color: #FFD700; /* Warna tombol pesan */
-    color: #6A1B1A; /* Warna teks tombol */
+    background-color: #FFD700; 
+    color: #6A1B1A; 
     border: none;
     border-radius: 30px;
     font-size: 18px;
@@ -98,8 +98,8 @@ body {
 }
 
 .btn-order:hover {
-    background-color: #BF392A; /* Warna saat hover */
-    color: white; /* Warna teks saat hover */
+    background-color: #BF392A; 
+    color: white;
 }
 
 /* Responsive Design */
