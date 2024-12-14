@@ -1,0 +1,41 @@
+.navbar {
+    background-color: #6a1b0c;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-brand:hover {
+    color: #f1c40f;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: #f1c40f !important;
+}
+
+.cart-icon {
+    font-size: 20px;
+    color: maroon;
+    margin-left: 10px;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+
+.speed-text {
+    font-family: 'Galada', sans-serif;
+    color: #FBE87B;
+}
+.dish-text {
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+}

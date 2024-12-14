@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        .navbar {
+            background-color: #6a1b0c;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: white;
+        }
+
+        .navbar-brand:hover {
+            color: #f1c40f;
+        }
+
+        .nav-link {
+            color: white !important;
+        }
+
+        .nav-link:hover {
+            color: #f1c40f !important;
+        }
+
+        .cart-icon {
+            font-size: 20px;
+            color: maroon;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <span class="speed-text">Speed</span>
+                <span class="dish-text">Dish</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="favorit.html">Favorit</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pesan.html">Pesanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="notifikasi_pesan.html">Notifikasi</a></li>
+                    <li class="nav-item d-flex align-items-center">
+                        <a class="nav-link" href="#">Account</a>
+                        <i class="fas fa-shopping-cart cart-icon"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>
+
+
+<!-- Include Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Galada&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Add custom CSS for styling -->
+<style>
+    .speed-text {
+        font-family: 'Galada', sans-serif;
+        color: #FBE87B;
+    }
+    .dish-text {
+        font-family: 'Inter', sans-serif;
+        color: #FFFFFF;
+    }
+</style>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #6a1b0c;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: white;
+        }
+
+        .navbar-brand:hover {
+            color: #f1c40f;
+        }
+
+        .search-bar {
+            border: 1px solid #ddd;
+            border-radius: 50px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            padding: 5px 15px;
+        }
+
+        .search-bar input {
+            border: none;
+            outline: none;
+            flex: 1;
+        }
+
+        .search-bar button {
+            background: none;
+            border: none;
+            color: #6a1b0c;
+        }
+
+        .cart-icon {
+            font-size: 1.5rem;
+            color: #6a1b0c;
+            background-color: #fff;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .cart-icon:hover {
+            transform: scale(1.1);
+            color: #8e2d16;
+        }
+
+        .category {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .category img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+
+        .category img:hover {
+            transform: scale(1.1);
+        }
+
+        .category p {
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .food-item {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .food-item:hover {
+            transform: scale(1.02);
+        }
+
+        .footer {
+            background-color: #6a1b0c;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .footer a:hover {
+            color: #f1c40f;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <!-- Search Bar and Cart Icon -->
+    <div class="container mt-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <!-- Greeting with location -->
+            <div class="d-flex align-items-center">
+                <i class="fas fa-map-marker-alt text-danger me-2"></i>
+                <h6 class="mb-0">Hai, Anastasya - Sidorekso</h6>
+            </div>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search food...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+
+    <!-- Categories -->
+    <!-- (Your existing code for categories remains here) -->
+    
+    <!-- Categories -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col text-center">
+                <div class="category">
+                    <img src="image/ikon makanan.jpg"
+                        alt="Rice">
+                    <p>Makanan</p>
+                </div>
+            </div>
+            <div class="col text-center">
+                <div class="category">
+                    <img src="image/ikon mie.jpg"
+                        alt="Noodles">
+                    <p>Mie</p>
+                </div>
+            </div>
+            <div class="col text-center">
+                <div class="category">
+                    <img src="image/ikon minuman.jpg"
+                        alt="Drink">
+                    <p>Minuman</p>
+                </div>
+            </div>
+            <div class="col text-center">
+                <div class="category">
+                    <img src="image/ikon snack.jpg"
+                        alt="Noodles">
+                    <p>Snack</p>
+                </div>
+            </div>
+            <div class="col text-center">
+                <div class="category">
+                    <img src="image/ikon kopi.jpg"
+                        alt="Noodles">
+                    <p>Kopi</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--voucher-->
+    <style>.ticket-card {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 15px;
+        padding: 15px;
+        border-radius: 10px;
+        width: 48%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .ticket-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .ticket-text h6 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .ticket-text p {
+        margin: 0;
+        font-size: 12px;
+    }
+    </style>
+    <!-- Ticket Buttons -->
+<div class="container mt-4">
+    <div class="d-flex justify-content-between">
+        <!-- Nearby Button -->
+        <div class="ticket-card" style="background-color: #d32f2f;">
+            <i class="fas fa-map-marker-alt fa-2x" style="color: #ffccbc;"></i>
+            <div class="ticket-text">
+                <h6 class="text-white mb-1">Sekitarmu</h6>
+                <p class="text-white small mb-0">Cek Disini</p>
+            </div>
+        </div>
+
+        <!-- Voucher Button -->
+        <div class="ticket-card" style="background-color: #ffc107;">
+            <i class="fas fa-ticket-alt fa-2x" style="color: #fff;"></i>
+            <div class="ticket-text">
+                <h6 class="text-dark mb-1">Klaim Voucher</h6>
+                <p class="text-dark small mb-0">Cek Disini</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--voucher-->
+
+    <!-- Food Items -->
+    <style>.btn-maroon {
+        background-color: #6a1b0c;
+        border: none;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 20px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    
+    .btn-maroon:hover {
+        background-color: #8e2d16;
+        transform: scale(1.05);
+    }
+    </style>
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h4 button class="mb-0 btn btn-maroon text-white px-4">Rekomendasi</h4>
+       
+    </div>
+        <div class="food-item d-flex">
+            <img src="image/martabak manis.jpg"
+                alt="Martabak" class="img-fluid" width="100">
+            <div class="ms-3">
+                <h5>Martabak Manis</h5>
+                <p>Snack| 4.9 ★ | 0.5km</p>
+                <i></i>
+                <span class="badge bg-warning text-dark">100% Discount</span>
+            </div>
+        </div>
+    </div>
+    <!-- Food Items -->
+    <div class="container mt-4">
+        <div class="food-item d-flex">
+            <img src="image/bubur ketan hitam.jpg"
+                alt="Martabak" class="img-fluid" width="100">
+            <div class="ms-3">
+                <h5>Bubur Ketan Hitam Selera</h5>
+                <p>Minuman | 4.9 ★ | 0.5km</p>
+                <span class="badge bg-warning text-dark">100% Discount</span>
+            </div>
+        </div>
+    </div>
+    <!-- Food Items -->
+    <div class="container mt-4">
+        <div class="food-item d-flex">
+            <img src="image/cireng ayam mozarela.jpg"
+                alt="Martabak" class="img-fluid" width="100">
+            <div class="ms-3">
+                <h5>Cireng Ayam Mozarela Pudjasera</h5>
+                <p>Snack | 4.9 ★ | 0.5km</p>
+                <span class="badge bg-warning text-dark">100% Discount</span>
+            </div>
+        </div>
+    </div>
+    <!-- Food Items -->
+    <div class="container mt-4">
+        <div class="food-item d-flex">
+            <img src="image/Belut Cabe Ijo Socha.jpg"
+                alt="Martabak" class="img-fluid" width="100">
+            <div class="ms-3">
+                <h5>Belut Cabe Ijo Socha</h5>
+                <p>Makanan | 4.9 ★ | 0.5km</p>
+                <span class="badge bg-warning text-dark">100% Discount</span>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <p>&copy; 2024 Food App | <a href="#">Privacy Policy</a></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+
+</html>

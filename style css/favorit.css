@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #ffd700;
+    padding: 20px;
+    position: relative;
+}
+
+.header .time {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header .location {
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+}
+
+.header .cart {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.food-item {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.food-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.food-item .details {
+    flex-grow: 1;
+}
+
+.food-item .details h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.food-item .details p {
+    margin: 0;
+    color: gray;
+}
+
+.food-item .details .rating {
+    color: gold;
+}
+
+.food-item .details .discount {
+    background-color: #ffd700;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.food-item .favorite {
+    font-size: 24px;
+    color: red;
+}
+
+.footer {
+    background-color: #ffd700;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .footer-item {
+    text-align: center;
+    font-size: 18px;
+}
