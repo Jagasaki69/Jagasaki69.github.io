@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.back-button {
+    display: inline-block;
+    margin-right: 20px; /* Jarak antara tombol kembali dan elemen lainnya */
+}
+
+.back-button .btn {
+    background-color: #f8f9fa; /* Warna latar belakang tombol */
+    color: #d6b600; /* Warna teks tombol */
+    padding: 10px 15px; /* Padding tombol */
+    border-radius: 5px; /* Sudut tombol */
+    text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+.back-button .btn:hover {
+    background-color: #e2e6ea; /* Warna latar belakang saat hover */
+}
+
+.header {
+    background-color: #ffd700;
+    padding: 20px;
+    position: relative;
+}
+
+.header .time {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header .location {
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+}
+
+.header .cart {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.details {
+    text-align: center; /* Pusatkan teks */
+}
+.food-item {
+    display: flex;
+    flex-direction: column; /* Ubah menjadi kolom untuk tampilan kecil */
+    align-items: center; /* Pusatkan item */
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.food-item img {
+    width: 100%; 
+    height: auto;
+    max-width: 100px;
+}
+
+.food-item .details {
+    flex-grow: 1;
+}
+
+.food-item .details h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.food-item .details p {
+    margin: 0;
+    color: gray;
+}
+
+.food-item .details .rating {
+    color: gold;
+}
+
+.food-item .details .discount {
+    background-color: #ffd700;
+    border-radius: 5px;
+    padding: 2px 5px;
+    font-size: 12px;
+    color: black;
+}
+
+.food-item .favorite {
+    font-size: 24px;
+    color: red;
+}
+
+.footer {
+    flex-direction: column; /* Ubah menjadi kolom untuk tampilan kecil */
+}
+
+.footer .footer-item {
+    margin: 5px 0; /* Tambahkan jarak antar item footer */
+}
+
+/* Media Queries untuk tampilan lebih besar */
+@media (min-width: 768px) {
+    .food-item {
+        flex-direction: row; /* Kembali ke baris untuk tampilan besar */
+    }
+
+    .food-item img {
+        max-width: 100px; /* Ukuran gambar tetap */
+    }
+
+    .footer {
+        flex-direction: row; /* Kembali ke baris untuk footer */
+    }
+}
