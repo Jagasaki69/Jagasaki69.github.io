@@ -42,68 +42,50 @@ body {
     font-weight: bold;
 }
 
-.food-item {
+.food-container {
     display: flex;
-    flex-direction: column; /* Default to column for mobile */
-    align-items: center; /* Center items */
-    background-color: white;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
+    flex-wrap: wrap; /* Allow items to wrap */
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center items */
 }
 
-.food-item img {
+.food-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(33.333% - 20px); /* Default to 3 cards per row */
+    transition: transform 0.2s;
+}
+
+.food-card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.food-card img {
     width: 100%;
     height: auto;
-    max-width: 100px; /* Set max width for images */
 }
 
-.food-item .details {
-    text-align: center; /* Center text */
+.details {
+    padding: 10px;
 }
 
-.food-item .details h3 {
-    font-size: 18px;
+.discount {
+    display: block;
+    color: green;
     font-weight: bold;
-    margin: 0;
 }
 
-.food-item .details p {
-    margin: 0;
-    color: gray;
-}
-
-.food-item .details .rating {
-    color: gold;
-}
-
-.food-item .details .discount {
-    background-color: #ffd700;
-    border-radius: 5px;
-    padding: 2px 5px;
-    font-size: 12px;
-    color: black;
-}
-
-.food-item .favorite {
-    font-size: 24px;
-    color: red;
-}
-
-/* Media Queries for larger screens */
-@media (min-width: 768px) {
-    .food-item {
-        flex-direction: row; /* Change to row for larger screens */
-        justify-content: space-between; /* Space items evenly */
-        align-items: center; /* Center items vertically */
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .food-card {
+        width: calc(50% - 20px); /* 2 cards per row */
     }
+}
 
-    .food-item img {
-        max-width: 100px; /* Keep image size */
-    }
-
-    .food-item .details {
-        flex-grow: 1; /* Allow details to take available space */
-        text-align: left; /* Align text to the left */
+@media (max-width: 480px) {
+    .food-card {
+        width: calc(100% - 20px); /* 1 card per row */
     }
 }
