@@ -1,16 +1,15 @@
 .footer {
-    background-color: #6a1b0c;
-    color: white;
-    padding-top: 10px;
-    padding-bottom: 0px;
-  }
-  
-  .footer a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-  }
-  
-  .footer a:hover {
-    color: #f1c40f;
-  }
+  background-color: #6a1b0c;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer a:hover {
+  color: #f1c40f;
+}
