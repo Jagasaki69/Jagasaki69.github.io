@@ -23,10 +23,15 @@ body {
     padding: 15px;
 }
 .message {
+    display: flex;
+    align-items: flex-start;
     margin-bottom: 10px;
 }
 .message.driver {
-    text-align: right;
+    flex-direction: row;
+}
+.message.user {
+    flex-direction: row-reverse;
 }
 .message .content {
     display: inline-block;
@@ -40,6 +45,12 @@ body {
 .message.driver .content {
     background-color: #8e2d16;
     color: white;
+}
+.message img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 10px;
 }
 .chat-input {
     padding: 10px;
