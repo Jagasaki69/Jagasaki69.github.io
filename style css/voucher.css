@@ -1,0 +1,102 @@
+
+body {
+    background-color: #f5f5f5;
+}
+
+.voucher-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.voucher-card img {
+    border-radius: 15px 0 0 15px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.voucher-card-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.voucher-card-body h5 {
+    color: #8e2d16;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.voucher-card-body p {
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.voucher-card-body .btn {
+    background-color: #8e2d16;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+}
+
+.voucher-card-body .btn:hover {
+    background-color: #7b2514;
+}
+
+.voucher-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.voucher-category {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #8e2d16;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.voucher-card-footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 0 0 15px 15px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.voucher-card-footer .discount {
+    color: #8e2d16;
+    font-weight: bold;
+}
+
+/* Custom Styles for Horizontal Layout */
+.voucher-card-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.voucher-card-horizontal .voucher-image {
+    width: 40%;
+    border-radius: 15px 0 0 15px;
+    height: 100%;
+}
+
+.voucher-card-horizontal .voucher-details {
+    width: 60%;
+    padding: 15px;
+}
