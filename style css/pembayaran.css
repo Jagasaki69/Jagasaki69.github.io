@@ -1,8 +1,8 @@
 :root {
-    --color-background: #f4f4f4; /* Warna latar belakang yang konsisten */
-    --color-primary: #8e2d16; /* Warna utama yang digunakan di file lain */
-    --color-secondary: #ffd700; /* Warna sekunder untuk tombol dan elemen lainnya */
-    --font-family-base: Arial, sans-serif; /* Font yang konsisten */
+    --color-background: #f4f4f4;
+    --color-primary: #8e2d16; 
+    --color-secondary: #ffd700; 
+    --font-family-base: Arial, sans-serif;
     --font-size-h1: 2rem; 
     --font-size-h2: 1.5rem; 
 }
@@ -201,6 +201,17 @@
     padding-left: 1em;
     padding-right: 1em;
   }
+
+  .back-button {
+    color: rgb(21, 2, 2);
+    text-decoration: none; 
+    font-size: 18px; 
+    margin-right: 20px; 
+}
+
+.back-button:hover {
+    text-decoration: underline; 
+}
   
   .icon {
     height: 1em;
@@ -212,11 +223,11 @@
   
   @media (min-width: 768px) {
     body {
-      padding: 4em; /* Tambahkan padding lebih banyak untuk desktop */
+      padding: 4em;
     }
   
     .card {
-      padding: 2em; /* Tambahkan padding lebih banyak pada kartu */
+      padding: 2em;
     }
   }
 
