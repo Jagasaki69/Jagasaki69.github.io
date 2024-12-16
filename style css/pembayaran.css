@@ -1,16 +1,16 @@
 :root {
-    --color-background: #fae3ea;
-    --color-primary: #fc8080;
-    --font-family-base: Poppin, sans-serif;
+    --color-background: #f4f4f4; /* Warna latar belakang yang konsisten */
+    --color-primary: #8e2d16; /* Warna utama yang digunakan di file lain */
+    --color-secondary: #ffd700; /* Warna sekunder untuk tombol dan elemen lainnya */
+    --font-family-base: Arial, sans-serif; /* Font yang konsisten */
     --font-size-h1: 2rem; 
     --font-size-h2: 1.5rem; 
-  }
+}
   
   
-  * {
-    -webkit-box-sizing: inherit;
-            box-sizing: inherit;
-  }
+* {
+    box-sizing: border-box;
+}
   
   html {
     -webkit-box-sizing: border-box;
@@ -23,12 +23,11 @@
     font-family: var(--font-family-base);
     line-height: 1.5;
     margin: 0;
-    min-height: 100vh;
     padding: 2em; 
     max-width: 1200px; 
     margin-left: auto; 
     margin-right: auto;
-  }
+}
   
   address {
     font-style: normal;
@@ -135,7 +134,7 @@
   
   .button:focus,
   .button:hover {
-    background-color: #e96363;
+    background-color: #ffd700;
   }
   
   .button--full {
@@ -220,3 +219,6 @@
       padding: 2em; /* Tambahkan padding lebih banyak pada kartu */
     }
   }
+
+
+  
